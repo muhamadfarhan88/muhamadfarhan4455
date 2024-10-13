@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeguhAqiqah</title>
+
+    <!--google font--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <!--tailwind style-->
+    <link rel="stylesheet" type="text/css" href="../src/tailwind.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--alphine js-->
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body class="pb-20 font-['Inter']">
+  <!-- NAVIGATION-->
+    <nav class="py-9 px-4" x-data="{navopen : true}">
+        <div class="container mx-auto flex items-center justify-between">
+          <div class="order-1 md:order-2">
+            <img src="../public/asset/teguhaqiqah.svg" alt="TeguhAqiqah Logo" class="w-[142px] h-[105px] object-cover">
+          </div>
+          <div class="lg:hidden order-2 md:order-1">
+            <img @click="navopen = !navopen" src="../public/asset/toogle.svg" alt="Toggle Menu" class="filter invert-[39%] sepia-[85%] saturate-[1772%] hue-rotate-[353deg] brightness-[97%] contrast-[95%]">
+          </div>
+          <div class="order-2 hidden lg:block">
+            <ul class="flex gap-16">
+                <li class="text-amber-900 font-bold text-sm font-circular"><a href="">BERANDA</a></li>
+                <li class="text-amber-900 font-bold text-sm font-circular opacity-50"><a href="">TENTANG</a></li>
+                <li class="text-amber-900 font-bold text-sm font-circular opacity-50"><a href="">LAYANAN</a></li>
+                <li class="text-amber-900 font-bold text-sm font-circular opacity-50"><a href="">KONTAK</a></li>
+            </ul>
+        </div>
+          <div class="order-3 hidden md:block">
+            <button class="bg-white hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full text-sm">Masuk</button>
+            <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full text-sm">Daftar</button>
+          </div>
+        </div>
+        
+        <div x-show="navopen" x-data="{open : false}" class="fixed bottom-0 left-0 right-0 bg-white p-4 z-50 border lg:hidden"
+          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter-start="opacity-0 scale-90"
+          x-transition:enter-end="opacity-100 scale-100"
+          x-transition:leave="transition ease-in duration-300"
+          x-transition:leave-start="opacity-100 scale-100"
+          x-transition:leave-end="opacity-0 scale-90">
+          <ul class="flex justify-between items-start h-full flex-wrap md:flex-nowrap">
+            <li class="flex flex-col items-center">
+              <button class="flex flex-col items-center no-underline gap-1">
+                <ion-icon name="home-outline" class="text-[#e04a0e] text-2xl mb-1"></ion-icon>
+                <span class="text-[#e04a0e] text-xs font-normal">BERANDA</span>
+              </button>
+            </li>
+            <li class="flex flex-col items-center">
+              <button class="flex flex-col items-center no-underline gap-1">
+                <ion-icon name="albums-outline" class="text-amber-900 opacity-50 text-2xl mb-1"></ion-icon>
+                <span class="text-amber-900 text-xs font-normal">TENTANG KAMI</span>
+              </button>
+            </li>
+            <li class="flex flex-col items-center">
+              <button class="flex flex-col items-center no-underline gap-1">
+                <ion-icon name="sparkles-outline" class="text-amber-900 opacity-50 text-2xl mb-1"></ion-icon>
+                <span class="text-amber-900 text-xs font-normal">LAYANAN</span>
+              </button>
+            </li>
+            <li class="flex flex-col items-center">
+              <button class="flex flex-col items-center  no-underline gap-1">
+                <ion-icon name="megaphone-outline" class="text-amber-900 opacity-50 text-2xl mb-1"></ion-icon>
+                <span class="text-amber-900 text-xs font-normal">KONTAK</span>
+                    </a>
+                </li>
+                <li class="flex flex-col items-center">
+                    <button @click="open = !open" class="flex flex-col items-center  no-underline gap-1">
+                        <ion-icon name="menu-outline" class="text-amber-900 opacity-50 text-2xl mb-1"></ion-icon>
+                        <span class="text-amber-900 text-xs font-normal">PESAN</span>
+                    </a>
+                </li>
+            </ul>
+            <div x-show="open" 
+            class="absolute bottom-24 left-1/2 -translate-x-1/2 flex gap-4 w-3/4"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-90"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-300"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-90">
+                <button class=" grow bg-white hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full text-sm">Masuk</button>
+                <button class="grow bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full text-sm">Daftar</button>
+              </div>
+        </div>
+        </nav>
+
+        <!--Hero section-->
+<section>
+<div class="container mx-auto px-4 py-4 lg:py-16">
+  <div class="grid grid-cols-12 items-center">
+      <div class="col-span-12 lg:col-span-4 order-2 lg:order-1">
+        <div>
+<button class="px-8 py-4 bg-white text-orange-500 flex gap-2 text-sm font-bold drop-shadow-sm-shadow rounded-full mx-auto lg:mx-0">
+  Jelajahi layanan aqiqah!
+  <img src="../public/asset/Vector.svg" alt="">
+</button>
+<h1 class="mt-4 mb-6 md:mb-[43px] md:mt-[43px] lg:text-[69px] font-bold text-[40px] md-text-[52px] text-grey leading-tight text-center lg:text-start">Aqiqah, <span class="text-orange-500">Catering dan Qurban?</span> Kami Ahlinya!</h1>
+<p class="mb-8 md:mb-[43px] text-center lg:text-start text-grey opacity-50 text-base md:text-[18px] font-inter md:w-3/4 lg:w-full mx-auto">
+  Nikmati layanan aqiqah, catering, dan qurban berkualitas tinggi yang aman, terjangkau, dan bikin acara keagamaan Anda sukses tanpa ribet dengan pengalaman yang menyenangkan.
+</p>
+<div class="flex flex-col md:flex-row justify-center gap-6 lg:justify-start">
+  <button class="py-6 px-8 bg-orange-700 drop-shadow-lg-shadow text-white rounded-full text-sm font-bold">Layanan Kami</button>
+  <button class="justify-center items-center z-index flex gap-2 py-6 px-8 bg-white border border-[#EEEEEE] rounded-full text-sm font-bold">
+    <img src="../public/asset/play-icon.svg" alt="">
+    Tentang Kami
+  </button>
+</div>
+        </div>
+      </div>
+      <div class="col-span-12 lg:col-span-8 order-1 lg:order-2 text-center">
+        <div>
+
+        </div>
+        <img src="../public/asset/hero.png" class="w-full" alt="">
+      </div>
+  </div>
+</div>
+</section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+</html>
