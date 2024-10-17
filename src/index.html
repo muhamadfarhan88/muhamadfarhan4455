@@ -16,11 +16,11 @@
     <script src="//unpkg.com/alpinejs" defer></script>
 </head>
 <body class="pb-20 font-['Inter']">
-  <!-- NAVIGATION-->
+        <!-- NAVIGATION-->
     <nav class="py-9 px-4" x-data="{navopen : true}">
         <div class="container mx-auto flex items-center justify-between">
           <div class="order-1 md:order-2">
-            <img src="../public/asset/teguhaqiqah.svg" alt="TeguhAqiqah Logo" class="w-[142px] h-[105px] object-cover">
+            <img src="../public/asset/logonavbar.svg" alt="TeguhAqiqah Logo" class="w-[125px] h-[105px] object-cover">
           </div>
           <div class="lg:hidden order-2 md:order-1">
             <img @click="navopen = !navopen" src="../public/asset/toogle.svg" alt="Toggle Menu" class="filter invert-[39%] sepia-[85%] saturate-[1772%] hue-rotate-[353deg] brightness-[97%] contrast-[95%]">
@@ -141,67 +141,255 @@
 </div>
 </section>
 
-<!-- SERVICE SECTION -->
+        <!-- FEATURE SECTION -->
 <section class="py-16 overflow-x-hidden">
   <div class="container mx-auto px-3">
+    <!-- Grid Container -->
     <div class="grid grid-cols-12 items-center">
+      
+      <!-- Header Section -->
       <div class="lg:col-span-4 col-span-12 flex gap-4 flex-col">
         <span class="text-orange-500 font-bold leading-tight text-center lg:text-start text-base sm:text-2xl">
           LAYANAN
         </span>
-        <h1 class="font-bold sm:text-5xl text-3xl leading-tight text-grey text-center lg:text-start">Kategori nilai teratas untuk Anda</h1>
+        <h1 class="font-bold sm:text-5xl text-3xl leading-tight text-grey text-center lg:text-start">
+          Kategori nilai teratas untuk Anda
+        </h1>
       </div>
-      <div class="lg:col-span-8 col-span-12 flex flex-col sm:flex-row gap-5 lg:w-screen sm:auto lg:mt-0 sm:mt-16 mt-8">
-        <div class="flex justify-center gap-8 flex-col items-center w-full sm:w-[275px] rounded-[32px] border lg:p-10 p-4 drop-shadow-xl-shadow bg-white">
-          <div>
+
+      <!-- Cards Container -->
+      <div class="lg:col-span-8 col-span-12 flex flex-col sm:flex-row justify-center gap-8 sm:auto lg:mt-0 sm:mt-16 mt-8">
+        
+        <!-- Card 1: Kualitas -->
+        <div class="service-card flex justify-start gap-8 flex-col items-center w-full sm:w-[275px] rounded-[32px] border lg:p-10 p-4 drop-shadow-xl-shadow bg-white">
+          <div class="mt-1">
             <script src="https://cdn.lordicon.com/lordicon.js"></script>
-<lord-icon
-    src="https://cdn.lordicon.com/zsaomnmb.json"
-    trigger="hover"
-    style="width:90px;height:90px">
-</lord-icon>
+            <lord-icon
+              src="https://cdn.lordicon.com/zsaomnmb.json"
+              trigger="hover"
+              style="width:90px;height:90px">
+            </lord-icon>
           </div>
           <div class="flex gap-8 flex-col">
-          <h2 class="font-bold text-grey text-lg text-center">
-            Kualitas dan Keamanan Produk
-          </h2>
-          <P class="font-inter text-lg leading-relaxed text-grey opacity-50 text-center">Kami menjamin bahan makanan aqiqah berkualitas tinggi dan aman, sesuai syariat dan sunnah untuk kehalalan dan kualitas terbaik.</P>
+            <h2 class="font-bold text-grey text-lg text-center">
+              Kualitas dan Keamanan Produk
+            </h2>
+            <p class="font-inter text-lg leading-relaxed text-grey opacity-50 text-center">
+              Kami menjamin bahan makanan aqiqah berkualitas tinggi dan aman, sesuai syariat dan sunnah untuk kehalalan dan kualitas terbaik.
+            </p>
+          </div>
         </div>
-        </div>
-        <div class="flex justify-center gap-8 flex-col items-center w-full sm:w-[275px] rounded-[32px] border lg:p-10 p-4 drop-shadow-lg-shadow bg-white">
-          <div>
+
+        <!-- Card 2: Paket -->
+        <div class="service-card flex justify-start gap-8 flex-col items-center w-full sm:w-[275px] rounded-[32px] border lg:p-10 p-4 drop-shadow-lg-shadow bg-grey">
+          <div class="mt-1">
             <script src="https://cdn.lordicon.com/lordicon.js"></script>
-<lord-icon
-    src="https://cdn.lordicon.com/qnwzeeae.json"
-    trigger="hover"
-    style="width:90px;height:90px">
-</lord-icon>
+            <lord-icon
+              src="https://cdn.lordicon.com/qnwzeeae.json"
+              trigger="hover"
+              style="width:90px;height:90px">
+            </lord-icon>
           </div>
           <div class="flex gap-8 flex-col">
-          <h2 class="font-bold text-grey text-lg text-center">
-            Paket Lengkap dan Terjangkau
-          </h2>
-          <P class="font-inter text-lg leading-relaxed text-grey opacity-50 text-center">Nikmati berbagai pilihan paket aqiqah, catering dan qurban yang hemat biaya namun tetap kaya rasa dan memuaskan selera semua orang.</P>
+            <h2 class="font-bold text-grey text-lg text-center">
+              Paket Lengkap dan Dokumentasi
+            </h2>
+            <p class="font-inter text-lg leading-relaxed text-grey opacity-50 text-center">
+              Nikmati berbagai pilihan paket Teguh aqiqah, catering dan qurban beserta Dokumentasi pelaksanaan penyembelihan hewan aqiqah putra/putri Anda.
+            </p>
+          </div>
         </div>
-        </div>
-        <div class="flex justify-center gap-8 flex-col items-center w-full sm:w-[275px] rounded-[32px] border lg:p-10 p-4 drop-shadow-xl-shadow bg-white">
-          <div>
+
+        <!-- Card 3: Layanan -->
+        <div class="service-card flex justify-start gap-8 flex-col items-center w-full sm:w-[275px] rounded-[32px] border lg:p-10 p-4 drop-shadow-xl-shadow bg-white">
+          <div class="mt-1">
             <script src="https://cdn.lordicon.com/lordicon.js"></script>
-<lord-icon
-    src="https://cdn.lordicon.com/egmlnyku.json"
-    trigger="hover"
-    style="width:90px;height:90px">
-</lord-icon>
+            <lord-icon
+              src="https://cdn.lordicon.com/egmlnyku.json"
+              trigger="hover"
+              style="width:90px;height:90px">
+            </lord-icon>
           </div>
           <div class="flex gap-8 flex-col">
-          <h2 class="font-bold text-grey text-lg text-center">
-            Layanan Ramah dan Profesional
-          </h2>
-          <P class="font-inter text-lg leading-relaxed text-grey opacity-50 text-center">Tim kami siap membantu Anda dengan layanan yang profesional, menjadikan pengalaman Anda tak terlupakan.</P>
+            <h2 class="font-bold text-grey text-lg text-center">
+              Layanan Ramah dan Profesional
+            </h2>
+            <p class="font-inter text-lg leading-relaxed text-grey opacity-50 text-center">
+              Tim kami siap membantu Anda dengan layanan yang profesional, menjadikan pengalaman Anda tak terlupakan.
+            </p>
+          </div>
         </div>
-        </div>
+
       </div>
     </div>
+  </div>
+</section>
+        <!--PRICING SECTION-->
+<section
+  x-data="{ 
+    plans: [
+    {
+        name: 'Basic plan',
+        price: 12,
+        features: [
+            'Curabitur faucibus',
+            'massa ut pretium maximus',
+            'Sed posuere nisi',
+            'Pellentesque eu nibh et neque',
+            'Suspendisse a leo',
+            'Praesent quis venenatis ipsum',
+            'Duis non diam vel tortor',
+
+        ],
+    },
+    {
+        name: 'Startup',
+        price: 35,
+        features: [
+            'Curabitur faucibus',
+            'massa ut pretium maximus',
+            'Sed posuere nisi',
+            'Pellentesque eu nibh et neque',
+            'Suspendisse a leo',
+            'Praesent quis venenatis ipsum',
+            'Duis non diam vel tortor',
+        ],
+    },
+    {
+        name: 'Enterprise',
+        price: 60,
+        features: [
+            'Curabitur faucibus',
+            'massa ut pretium maximus',
+            'Sed posuere nisi',
+            'Pellentesque eu nibh et neque',
+            'Suspendisse a leo',
+            'Praesent quis venenatis ipsum',
+            'Duis non diam vel tortor',
+        ],
+    },
+    ] 
+  }"
+>
+  <div class="py-14">
+    <div class="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
+      <div class="relative max-w-xl mx-auto sm:text-center">
+        <h3 class="text-gray-800 text-3xl font-semibold sm:text-4xl">
+          Pricing for all sizes
+        </h3>
+        <div class="mt-3 max-w-xl">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            efficitur consequat nunc.
+          </p>
+        </div>
+      </div>
+      <div
+        class="mt-16 space-y-6 justify-center gap-6 sm:grid sm:grid-cols-2 sm:space-y-0 lg:grid-cols-3"
+      >
+        <template x-for="(plan, index) in plans" :key="index">
+          <div
+            class="relative flex-1 flex items-stretch flex-col p-8 rounded-xl border-2"
+          >
+            <div>
+              <span class="text-indigo-600 font-medium" x-text="plan.name">
+              </span>
+              <div class="mt-4 text-gray-800 text-3xl font-semibold">
+                <span x-text="`$${plan.price}`"></span>
+                <span class="text-xl text-gray-600 font-normal">/mo</span>
+              </div>
+            </div>
+            <ul class="py-8 space-y-3">
+              <template
+                x-for="(feature, fIndex) in plan.features"
+                :key="fIndex"
+              >
+                <li class="flex items-center gap-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-indigo-600"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span x-text="feature"></span>
+                </li>
+              </template>
+            </ul>
+            <div class="flex-1 flex items-end">
+              <button
+                class="px-3 py-3 rounded-lg w-full font-semibold text-sm duration-150 text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+  </div>
+</section>
+<!--section-->
+<section>
+  <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 p-4">
+    <!-- Bagian Kiri -->
+    <div class="w-full max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-4 sm:mb-0 sm:mt-16 sm:w-[275px] md:w-3/4 lg:w-full">
+        <a href="#">
+            <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+        </a>
+        <div class="p-5">
+            <a href="#">
+                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Read more
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <!-- Bagian Tengah -->
+    <div class="w-full max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-4 sm:mb-0 sm:mt-16 sm:w-[275px] md:w-3/4 lg:w-full">
+      <a href="#">
+          <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+      </a>
+      <div class="p-5">
+          <a href="#">
+              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+          <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Read more
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+          </a>
+      </div>
+  </div>
+    <!-- Bagian Kanan -->
+    <div class="w-full max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-4 sm:mb-0 sm:mt-16 sm:w-[275px] md:w-3/4 lg:w-full">
+      <a href="#">
+          <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
+      </a>
+      <div class="p-5">
+          <a href="#">
+              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+          <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              Read more
+              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+          </a>
+      </div>
   </div>
 </section>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
