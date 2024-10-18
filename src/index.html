@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
     <!--tailwind style-->
     <link rel="stylesheet" type="text/css" href="../src/tailwind.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <!--alphine js-->
     <script src="//unpkg.com/alpinejs" defer></script>
@@ -107,7 +108,7 @@
   Nikmati layanan aqiqah, catering, dan qurban berkualitas tinggi yang aman, terjangkau, dan bikin acara keagamaan Anda sukses tanpa ribet dengan pengalaman yang menyenangkan.
 </p>
 <div class="flex flex-col md:flex-row justify-center gap-6 lg:justify-start">
-  <button class="py-6 px-8 bg-orange-700 drop-shadow-lg-shadow text-white rounded-full text-sm font-bold">Layanan Kami</button>
+  <button class="py-6 px-8 bg-orange-700 drop-shadow-lg-shadow text-white rounded-full text-sm font-bold">Pesan Sekarang</button>
   <button class="justify-center items-center z-index flex gap-2 py-6 px-8 bg-white border border-[#EEEEEE] rounded-full text-sm font-bold">
     <img src="../public/asset/play-icon.svg" alt="">
     Tentang Kami
@@ -134,13 +135,12 @@
       </div><div>
         <img src="../public/asset/655c00d5da1ff-spx-express.svg" class="h-10 sm:h-20" alt="">
       </div><div>
-        <img src="../public/asset/67059b729a8e0-LiveChat.svg" class="h-20 sm:h-24" alt="">
+        <img src="../public/asset/Logo DANA.svg" class="h-5 sm:h-10" alt="">
       </div>
     </div>
   </div>
 </div>
 </section>
-
         <!-- FEATURE SECTION -->
 <section class="py-16 overflow-x-hidden">
   <div class="container mx-auto px-3">
@@ -148,7 +148,7 @@
     <div class="grid grid-cols-12 items-center">
       
       <!-- Header Section -->
-      <div class="lg:col-span-4 col-span-12 flex gap-4 flex-col">
+      <div data-aos="zoom-in" class="lg:col-span-4 col-span-12 flex gap-4 flex-col">
         <span class="text-orange-500 font-bold leading-tight text-center lg:text-start text-base sm:text-2xl">
           LAYANAN
         </span>
@@ -181,7 +181,7 @@
         </div>
 
         <!-- Card 2: Paket -->
-        <div class="service-card flex justify-start gap-8 flex-col items-center w-full sm:w-[275px] rounded-[32px] border lg:p-10 p-4 drop-shadow-lg-shadow bg-grey">
+        <div class="service-card flex justify-start gap-8 flex-col items-center w-full sm:w-[275px] rounded-[32px] border lg:p-10 p-4 drop-shadow-lg-shadow bg-white">
           <div class="mt-1">
             <script src="https://cdn.lordicon.com/lordicon.js"></script>
             <lord-icon
@@ -224,174 +224,143 @@
     </div>
   </div>
 </section>
-        <!--PRICING SECTION-->
-<section
-  x-data="{ 
-    plans: [
-    {
-        name: 'Basic plan',
-        price: 12,
-        features: [
-            'Curabitur faucibus',
-            'massa ut pretium maximus',
-            'Sed posuere nisi',
-            'Pellentesque eu nibh et neque',
-            'Suspendisse a leo',
-            'Praesent quis venenatis ipsum',
-            'Duis non diam vel tortor',
-
-        ],
-    },
-    {
-        name: 'Startup',
-        price: 35,
-        features: [
-            'Curabitur faucibus',
-            'massa ut pretium maximus',
-            'Sed posuere nisi',
-            'Pellentesque eu nibh et neque',
-            'Suspendisse a leo',
-            'Praesent quis venenatis ipsum',
-            'Duis non diam vel tortor',
-        ],
-    },
-    {
-        name: 'Enterprise',
-        price: 60,
-        features: [
-            'Curabitur faucibus',
-            'massa ut pretium maximus',
-            'Sed posuere nisi',
-            'Pellentesque eu nibh et neque',
-            'Suspendisse a leo',
-            'Praesent quis venenatis ipsum',
-            'Duis non diam vel tortor',
-        ],
-    },
-    ] 
-  }"
->
-  <div class="py-14">
-    <div class="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
-      <div class="relative max-w-xl mx-auto sm:text-center">
-        <h3 class="text-gray-800 text-3xl font-semibold sm:text-4xl">
-          Pricing for all sizes
-        </h3>
-        <div class="mt-3 max-w-xl">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-            efficitur consequat nunc.
-          </p>
-        </div>
-      </div>
-      <div
-        class="mt-16 space-y-6 justify-center gap-6 sm:grid sm:grid-cols-2 sm:space-y-0 lg:grid-cols-3"
-      >
-        <template x-for="(plan, index) in plans" :key="index">
-          <div
-            class="relative flex-1 flex items-stretch flex-col p-8 rounded-xl border-2"
-          >
-            <div>
-              <span class="text-indigo-600 font-medium" x-text="plan.name">
-              </span>
-              <div class="mt-4 text-gray-800 text-3xl font-semibold">
-                <span x-text="`$${plan.price}`"></span>
-                <span class="text-xl text-gray-600 font-normal">/mo</span>
-              </div>
+        <!--layanan hidangan selengkapnya SECTION-->
+        <section class="py-6 sm:py-12 dark:bg-gray-100 dark:text-gray-800">
+          <div class="container p-6 mx-auto ">
+            <div data-aos="zoom-in" class="space-y-4 text-center ">
+              <h2 class="text-3xl font-circular text-orange-500 leading-tight sm:text-3xl font-bold">Hidangan Spesial untuk Momen Spesial Anda</h2>
+              <p class="font-inter text-sm dark:text-gray-600 ">Aqiqah Teguh: Momen Berharga, Layanan Terpercaya.</p>
             </div>
-            <ul class="py-8 space-y-3">
-              <template
-                x-for="(feature, fIndex) in plan.features"
-                :key="fIndex"
-              >
-                <li class="flex items-center gap-5">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5 text-indigo-600"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span x-text="feature"></span>
-                </li>
-              </template>
-            </ul>
-            <div class="flex-1 flex items-end">
-              <button
-                class="px-3 py-3 rounded-lg w-full font-semibold text-sm duration-150 text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700"
-              >
-                Get Started
-              </button>
+            <div class="flex justify-center mt-16 ">
+            <div class="grid grid-cols-1 gap-x-8 gap-y-8 md:grid-cols-2 lg:grid-cols-4 max-w-6xl">
+              <article class="flex flex-col dark:bg-gray-50 ">
+                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                  <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="../public/asset/goat-satay-2377229_1280.jpg">
+                </a>
+                <div class="flex flex-col flex-1 p-6">
+                  <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                  <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-600">Selengkapnya</a>
+                  <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Paket Aqiqah Hemat Laki-Laki dan Perempuan </h3>
+                  <div class="flex flex-wrap justify-center pt-3 space-x-2 text-xs dark:text-gray-600">
+                  
+                    <span>5.0 <ion-icon name="star" style="color: orange"></ion-icon></span>
+                  </div>
+                </div>
+              </article>
+              <article class="flex flex-col dark:bg-gray-50">
+                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                  <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="../public/asset/gulai.jpg">
+                </a>
+                <div class="flex flex-col flex-1 p-6">
+                  <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                  <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-600">Selengkapnya</a>
+                  <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Paket Aqiqah Kambing Betina dan Jantan</h3>
+                  <div class="flex flex-wrap justify-center pt-3 space-x-2 text-xs dark:text-gray-600">
+                    
+                    <span>4.8 <ion-icon name="star" style="color: orange"></ion-icon></span>
+                  </div>
+                </div>
+              </article>
+              <article class="flex flex-col dark:bg-gray-50">
+                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                  <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="../public/asset/nasikotak.jpg">
+                </a>
+                <div class="flex flex-col flex-1 p-6">
+                  <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                  <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-600">Selengkapnya</a>
+                  <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Paket Aqiqah Nasi Box</h3>
+                  <div class="flex flex-wrap justify-center pt-3 space-x-2 text-xs dark:text-gray-600">
+                    
+                    <span>4.5 <ion-icon name="star" style="color: orange"></ion-icon></span>
+                  </div>
+                </div>
+              </article>
+              <article class="flex flex-col dark:bg-gray-50">
+                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                  <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="../public/asset/kambing.jpg">
+                </a>
+                <div class="flex flex-col flex-1 p-6">
+                  <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                  <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-600">Selengkapnya</a>
+                  <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Paket Hewan Qurban</h3>
+                  <div class="flex flex-wrap justify-center pt-3 space-x-2 text-xs dark:text-gray-600">
+                    
+                    <span>4.4 <ion-icon name="star" style="color: orange"></ion-icon></span>
+                  </div>
+                </div>
+              </article>
             </div>
           </div>
-        </template>
-      </div>
-    </div>
-  </div>
-</section>
-<!--section-->
-<section>
-  <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 p-4">
-    <!-- Bagian Kiri -->
-    <div class="w-full max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-4 sm:mb-0 sm:mt-16 sm:w-[275px] md:w-3/4 lg:w-full">
-        <a href="#">
-            <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-        </a>
-        <div class="p-5">
-            <a href="#">
-                <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-            </a>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Read more
-                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
         </div>
+        </section>
+
+        <!--LIVECHAT-->
+<div class="fixed bottom-24 right-4 z-50 transition-all duration-300 ease-in-out sm:right-4 md:right-6 lg:bottom-6 lg:right-6 lg:top-auto">
+  <!-- Chat Button (Visible when chat is closed) -->
+  <button id="chatButton" class="flex items-center justify-center w-12 h-12 rounded-full bg-orange-500 text-white shadow-lg hover:bg-orange-600 transition-all">
+    <ion-icon name="chatbubbles" class="text-xl"></ion-icon>
+  </button>
+
+  <!-- Chat Window (Hidden by default) -->
+  <div id="chatWindow" class="hidden bg-white rounded-lg shadow-xl w-64 flex flex-col ">
+    <!-- Header -->
+    <div class="bg-orange-500 text-white p-2 rounded-t-lg flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <ion-icon name="person-circle" class="text-xl"></ion-icon>
+        <div>
+          <h3 class="font-bold text-sm">Live Chat</h3>
+          <p class="text-xs">Customer Service 24/7</p>
+        </div>
+      </div>
+      <button id="closeChat" class="hover:bg-orange-600 rounded-full p-1">
+        <ion-icon name="close" class="text-lg"></ion-icon>
+      </button>
     </div>
-    <!-- Bagian Tengah -->
-    <div class="w-full max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-4 sm:mb-0 sm:mt-16 sm:w-[275px] md:w-3/4 lg:w-full">
-      <a href="#">
-          <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-      </a>
-      <div class="p-5">
-          <a href="#">
-              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-          </a>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-          <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Read more
-              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-              </svg>
-          </a>
+
+    <!-- Chat Messages -->
+    <div id="chatMessages" class="flex-1 p-3 space-y-3 h-64 overflow-y-auto">
+      <!-- Admin Message -->
+      <div class="flex justify-start">
+        <div class="max-w-[80%] rounded-lg p-2 bg-gray-100 text-gray-800">
+          <p class="text-xs">Selamat datang di Aqiqah Teguh! Ada yang bisa kami bantu?</p>
+          <p class="text-xs mt-1 opacity-70">10:00</p>
+        </div>
       </div>
-  </div>
-    <!-- Bagian Kanan -->
-    <div class="w-full max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-4 sm:mb-0 sm:mt-16 sm:w-[275px] md:w-3/4 lg:w-full">
-      <a href="#">
-          <img class="rounded-t-lg" src="/docs/images/blog/image-1.jpg" alt="" />
-      </a>
-      <div class="p-5">
-          <a href="#">
-              <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-          </a>
-          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-          <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-              Read more
-              <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-              </svg>
-          </a>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="px-3 py-1 bg-gray-50 border-t">
+      <div class="flex items-center space-x-1 text-xs text-gray-600">
+        <ion-icon name="call" class="text-sm"></ion-icon>
+        <span>Hubungi kami: +62 812-3456-7890</span>
       </div>
+    </div>
+
+    <!-- Input Form -->
+    <form id="chatForm" class="p-2 border-t flex space-x-2">
+      <input
+        type="text"
+        id="messageInput"
+        placeholder="Ketik pesan Anda..."
+        class="flex-1 border rounded-lg px-2 py-1 text-xs focus:outline-none focus:border-orange-500"
+      >
+      <button
+        type="submit"
+        class="bg-orange-500 text-white p-1 rounded-lg hover:bg-orange-600 transition-colors"
+      >
+        <ion-icon name="send" class="text-lg"></ion-icon>
+      </button>
+    </form>
   </div>
-</section>
+</div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script type="livechat" src="../src/livechat.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
 </body>
 </html>
