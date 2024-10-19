@@ -100,7 +100,7 @@
       <div class="col-span-12 lg:col-span-4 order-2 lg:order-1">
         <div>
 <button class="px-8 py-4 bg-white text-orange-500 flex gap-2 text-sm font-bold drop-shadow-sm-shadow rounded-full mx-auto lg:mx-0">
-  Jelajahi layanan aqiqah!
+  Jelajahi <span id="text-typed"></span>
   <img src="../public/asset/Vector.svg" alt="">
 </button>
 <h1 class="mt-4 mb-6 md:mb-[43px] md:mt-[43px] lg:text-[55px] font-bold text-[40px] md-text-[52px] text-grey leading-tight text-center lg:text-start">Aqiqah, <span class="text-orange-500">Catering dan Qurban?</span> Kami Ahlinya!</h1>
@@ -225,134 +225,123 @@
   </div>
 </section>
         <!--layanan hidangan selengkapnya SECTION-->
-        <section class="py-6 sm:py-12 dark:bg-gray-100 dark:text-gray-800">
-          <div class="container p-6 mx-auto ">
-            <div data-aos="zoom-in" class="space-y-4 text-center ">
-              <h2 class="text-3xl font-circular text-orange-500 leading-tight sm:text-3xl font-bold">Hidangan Spesial untuk Momen Spesial Anda</h2>
-              <p class="font-inter text-sm dark:text-gray-600 ">Aqiqah Teguh: Momen Berharga, Layanan Terpercaya.</p>
-            </div>
-            <div class="flex justify-center mt-16 ">
-            <div class="grid grid-cols-1 gap-x-8 gap-y-8 md:grid-cols-2 lg:grid-cols-4 max-w-6xl">
-              <article class="flex flex-col dark:bg-gray-50 ">
-                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                  <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="../public/asset/goat-satay-2377229_1280.jpg">
-                </a>
-                <div class="flex flex-col flex-1 p-6">
-                  <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
-                  <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-600">Selengkapnya</a>
-                  <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Paket Aqiqah Hemat Laki-Laki dan Perempuan </h3>
-                  <div class="flex flex-wrap justify-center pt-3 space-x-2 text-xs dark:text-gray-600">
+        <section class="overflow-x:hidden dark:bg-gray-100 dark:text-gray-800 drop-shadow-lg bg-white ">
+          <div class="container p-6 lg:pt-20 mx-auto space-y-6 sm:space-y-12 ">
+              <div class="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:flex dark:bg-gray-50 lg:space-x-12 lg:max-w-7xl">
+                  <!-- Map Container with negative margins -->
+                  <div class="lg:w-[100%] relative lg:-ml-[calc((100vw-1024px)/2)] xl:-ml-[calc((100vw-1280px)/2)] 2xl:-ml-[calc((100vw-1536px)/2)]">
+                      <iframe 
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9037385527845!2d106.87240417315392!3d-6.27638579371238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3f3139db253%3A0x546c84d670441dea!2sTeguh%20aqiqah!5e0!3m2!1sid!2sid!4v1729331617671!5m2!1sid!2sid" 
+                          class="w-full h-64 rounded-lg sm:h-96 lg:h-[500px]" 
+                          style="border:0;" 
+                          allowfullscreen="" 
+                          loading="lazy" 
+                          referrerpolicy="no-referrer-when-downgrade">
+                      </iframe>
+                  </div>
+      
+                  <!-- Content Container -->
+                  <div class="p-6 space-y-2 lg:w-[40%] text-center">
+                      <h3 data-aos="zoom-in" class="text-3xl lg:text-4xl font-circular text-orange-500 leading-tight font-bold">Temukan Layanan Aqiqah Yang Terbaik</h3>
+                      <p class="relative font-inter text-base lg:text-lg">Teguh Aqiqah, Catering, dan Qurban mudah ditemukan di Google Maps. Kami menawarkan layanan aqiqah berkualitas, catering untuk berbagai acara, dan penyediaan hewan qurban. Dengan lokasi strategis, Anda dapat mengunjungi kami atau mencari informasi lebih lanjut dengan mencarinya di Google Maps.</p>
+                      <div class="mt-8 flex justify-center relative">
+                          <div class="w-2/5 pr-2 transform translate-x-8">
+                              <img src="../public/asset/orang1.svg" alt="Team Member 1" class="w-full">
+                          </div>
+                          <div class="w-1/4 absolute left-1/4">
+                              <img src="../public/asset/orang2.svg" alt="Team Member 2" class="w-full">
+                          </div>
+                          <div class="w-1/4 absolute left-1/2 ml-8">
+                              <img src="../public/asset/pesawatkertas.svg" alt="Team Member 3" class="w-full">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      
+              <!-- Second Section -->
+              <div class="container flex flex-col mx-auto lg:flex-row mt-8 px-4 sm:px-6 lg:px-8">
+                  <div class="w-full lg:w-1/2 relative h-64 sm:h-80 md:h-96 lg:h-[600px] mb-6 lg:mb-14">
+                      <div class="absolute inset-0 flex items-center justify-center z-10">
+                          <img src="../public/asset/orang3.svg" alt="Team Member" class="w-1/2 max-w-xs lg:max-w-sm">
+                      </div>
+                      <div class="bg-cover bg-center absolute inset-0" style="background-image: url('https://source.unsplash.com/random/640x480');"></div>
+                  </div>
                   
-                    <span>5.0 <ion-icon name="star" style="color: orange"></ion-icon></span>
+                  <div class="flex flex-col w-full p-6 lg:w-1/2 md:p-8 lg:p-12 text-center items-center lg:text-left">
+                      <svg data-aos="zoom-in" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="orange" class="w-8 h-8 lg:w-12 lg:h-12 mb-8 dark:text-gray-600">
+                          <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                      </svg>
+                      <h2 data-aos="zoom-in" class="text-2xl sm:text-3xl lg:text-4xl font-semibold leading-tight mb-4 text-orange-500 font-circular">Jaminan Makanan Tidak Basi</h2>
+                      <p class="mt-2 mb-6 text-sm lg:text-lg sm:text-center font-inter">Kini tidak perlu khawatir lagi, pesanan Aqiqah kamu basi?
+                          Pesan Aqiqah di Teguh Aqiqah insya Allah dijamin Anti Basi.
+                          Jika tidak, uang kamu akan kembali!</p>
+                      <button class="px-6 sm:px-10 py-2 sm:py-3 text-base lg:text-lg font-medium rounded-3xl bg-orange-500 text-white hover:bg-orange-600 transition duration-300 font-inter">Pesan Sekarang</button>
                   </div>
-                </div>
-              </article>
-              <article class="flex flex-col dark:bg-gray-50">
-                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                  <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="../public/asset/gulai.jpg">
-                </a>
-                <div class="flex flex-col flex-1 p-6">
-                  <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
-                  <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-600">Selengkapnya</a>
-                  <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Paket Aqiqah Kambing Betina dan Jantan</h3>
-                  <div class="flex flex-wrap justify-center pt-3 space-x-2 text-xs dark:text-gray-600">
-                    
-                    <span>4.8 <ion-icon name="star" style="color: orange"></ion-icon></span>
-                  </div>
-                </div>
-              </article>
-              <article class="flex flex-col dark:bg-gray-50">
-                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                  <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="../public/asset/nasikotak.jpg">
-                </a>
-                <div class="flex flex-col flex-1 p-6">
-                  <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
-                  <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-600">Selengkapnya</a>
-                  <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Paket Aqiqah Nasi Box</h3>
-                  <div class="flex flex-wrap justify-center pt-3 space-x-2 text-xs dark:text-gray-600">
-                    
-                    <span>4.5 <ion-icon name="star" style="color: orange"></ion-icon></span>
-                  </div>
-                </div>
-              </article>
-              <article class="flex flex-col dark:bg-gray-50">
-                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
-                  <img alt="" class="object-cover w-full h-52 dark:bg-gray-500" src="../public/asset/kambing.jpg">
-                </a>
-                <div class="flex flex-col flex-1 p-6">
-                  <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
-                  <a rel="noopener noreferrer" href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-600">Selengkapnya</a>
-                  <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Paket Hewan Qurban</h3>
-                  <div class="flex flex-wrap justify-center pt-3 space-x-2 text-xs dark:text-gray-600">
-                    
-                    <span>4.4 <ion-icon name="star" style="color: orange"></ion-icon></span>
-                  </div>
-                </div>
-              </article>
-            </div>
+              </div>
           </div>
-        </div>
-        </section>
+      </section>
 
         <!--LIVECHAT-->
-<div class="fixed bottom-24 right-4 z-50 transition-all duration-300 ease-in-out sm:right-4 md:right-6 lg:bottom-6 lg:right-6 lg:top-auto">
-  <!-- Chat Button (Visible when chat is closed) -->
-  <button id="chatButton" class="flex items-center justify-center w-12 h-12 rounded-full bg-orange-500 text-white shadow-lg hover:bg-orange-600 transition-all">
-    <ion-icon name="chatbubbles" class="text-xl"></ion-icon>
-  </button>
-
-  <!-- Chat Window (Hidden by default) -->
-  <div id="chatWindow" class="hidden bg-white rounded-lg shadow-xl w-64 flex flex-col ">
-    <!-- Header -->
-    <div class="bg-orange-500 text-white p-2 rounded-t-lg flex justify-between items-center">
-      <div class="flex items-center space-x-2">
-        <ion-icon name="person-circle" class="text-xl"></ion-icon>
-        <div>
-          <h3 class="font-bold text-sm">Live Chat</h3>
-          <p class="text-xs">Customer Service 24/7</p>
+        <div class="fixed bottom-24 right-4 z-50 transition-all duration-300 ease-in-out sm:right-4 md:right-6 lg:bottom-6 lg:right-6 lg:top-auto">
+          <!-- Chat Button (Visible when chat is closed) -->
+          <button id="chatButton" class="flex items-center justify-center w-12 h-12 rounded-full bg-orange-500 text-white shadow-lg hover:bg-orange-600 transition-all">
+            <ion-icon name="chatbubbles" class="text-xl"></ion-icon>
+          </button>
+        
+          <!-- Chat Window (Hidden by default) -->
+          <div id="chatWindow" class="hidden bg-white rounded-lg shadow-xl w-64 sm:w-72 md:w-80 flex flex-col">
+            <!-- Header -->
+            <div class="bg-orange-500 text-white p-2 rounded-t-lg flex justify-between items-center">
+              <div class="flex items-center space-x-2">
+                <ion-icon name="person-circle" class="text-xl"></ion-icon>
+                <div>
+                  <h3 class="font-bold text-sm">Live Chat</h3>
+                  <p class="text-xs">Customer Service 24/7</p>
+                </div>
+              </div>
+              <button id="closeChat" class="hover:bg-orange-600 rounded-full p-1">
+                <ion-icon name="close" class="text-lg"></ion-icon>
+              </button>
+            </div>
+        
+            <!-- Chat Messages -->
+            <div id="chatMessages" class="flex-1 p-3 space-y-3 h-64 overflow-y-auto">
+              <!-- Admin Message -->
+              <div class="flex justify-start">
+                <div class="max-w-[80%] rounded-lg p-2 bg-gray-100 text-gray-800">
+                  <p class="text-xs">Selamat datang di Aqiqah Teguh! Ada yang bisa kami bantu?</p>
+                  <p class="text-xs mt-1 opacity-70">10:00</p>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Contact Info -->
+            <div class="px-3 py-1 bg-gray-50 border-t">
+              <div class="flex items-center space-x-1 text-xs text-gray-600">
+                <ion-icon name="call" class="text-sm"></ion-icon>
+                <span>Hubungi kami: +62 812-3456-7890</span>
+              </div>
+            </div>
+        
+            <!-- Input Form -->
+            <form id="chatForm" class="p-2 border-t flex space-x-2">
+              <input
+                type="text"
+                id="messageInput"
+                placeholder="Ketik pesan Anda..."
+                class="flex-1 border rounded-lg px-2 py-1 text-xs focus:outline-none focus:border-orange-500"
+              >
+              <button
+                type="submit"
+                class="bg-orange-500 text-white p-1 rounded-lg hover:bg-orange-600 transition-colors"
+              >
+                <ion-icon name="send" class="text-lg"></ion-icon>
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
-      <button id="closeChat" class="hover:bg-orange-600 rounded-full p-1">
-        <ion-icon name="close" class="text-lg"></ion-icon>
-      </button>
-    </div>
 
-    <!-- Chat Messages -->
-    <div id="chatMessages" class="flex-1 p-3 space-y-3 h-64 overflow-y-auto">
-      <!-- Admin Message -->
-      <div class="flex justify-start">
-        <div class="max-w-[80%] rounded-lg p-2 bg-gray-100 text-gray-800">
-          <p class="text-xs">Selamat datang di Aqiqah Teguh! Ada yang bisa kami bantu?</p>
-          <p class="text-xs mt-1 opacity-70">10:00</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- Contact Info -->
-    <div class="px-3 py-1 bg-gray-50 border-t">
-      <div class="flex items-center space-x-1 text-xs text-gray-600">
-        <ion-icon name="call" class="text-sm"></ion-icon>
-        <span>Hubungi kami: +62 812-3456-7890</span>
-      </div>
-    </div>
-
-    <!-- Input Form -->
-    <form id="chatForm" class="p-2 border-t flex space-x-2">
-      <input
-        type="text"
-        id="messageInput"
-        placeholder="Ketik pesan Anda..."
-        class="flex-1 border rounded-lg px-2 py-1 text-xs focus:outline-none focus:border-orange-500"
-      >
-      <button
-        type="submit"
-        class="bg-orange-500 text-white p-1 rounded-lg hover:bg-orange-600 transition-colors"
-      >
-        <ion-icon name="send" class="text-lg"></ion-icon>
-      </button>
-    </form>
-  </div>
-</div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script type="livechat" src="../src/livechat.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -361,6 +350,14 @@
             duration: 1000,
             once: true,
         });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
+    </script>
+    <script>
+      var typed = new Typed("#text-typed",{
+        strings: ["Layanan Aqiqah","Layanan Catering","Layanan Qurban","Layanan Aqiqah"],
+        typeSpeed : 90
+      })
     </script>
 </body>
 </html>
