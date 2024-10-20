@@ -9,12 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+
     <!--tailwind style-->
     <link rel="stylesheet" type="text/css" href="../src/tailwind.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <!--alphine js-->
     <script src="//unpkg.com/alpinejs" defer></script>
+
 </head>
 <body class="pb-20 font-['Inter']">
         <!-- NAVIGATION-->
@@ -141,6 +144,7 @@
   </div>
 </div>
 </section>
+
         <!-- FEATURE SECTION -->
 <section class="py-16 overflow-x-hidden">
   <div class="container mx-auto px-3">
@@ -224,9 +228,10 @@
     </div>
   </div>
 </section>
+
         <!--layanan hidangan selengkapnya SECTION-->
         <section class="py-6 sm:py-12 dark:bg-gray-100 dark:text-gray-800">
-          <div class="container px-4 mx-auto">
+          <div class="px-4 mx-auto">
             <div data-aos="zoom-in" class="space-y-4 text-center mb-12">
               <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-circular text-orange-500 leading-tight font-bold">Hidangan Spesial untuk Momen Spesial Anda</h2>
               <p class="font-inter text-sm md:text-base lg:text-lg xl:text-xl dark:text-gray-600">Aqiqah Teguh: Momen Berharga, Layanan Terpercaya.</p>
@@ -276,6 +281,7 @@
               </article>
             </div>
         
+
             <div class="mt-16 lg:mt-24 flex flex-col lg:flex-row items-center">
               <div class="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
                 <iframe 
@@ -287,9 +293,10 @@
                   referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
               </div>
+
               <div class="w-full lg:w-1/2 text-center lg:text-left">
                 <h3 data-aos="zoom-in" class="text-2xl sm:text-3xl lg:text-4xl font-circular text-orange-500 leading-tight font-bold mb-4">Temukan Layanan Aqiqah Yang Terbaik</h3>
-                <p class="font-inter text-base lg:text-lg mb-6">Teguh Aqiqah, Catering, dan Qurban mudah ditemukan di Google Maps. Kami menawarkan layanan aqiqah berkualitas, catering untuk berbagai acara, dan penyediaan hewan qurban.</p>
+                <p class="font-inter text-base lg:text-lg mb-6">Teguh Aqiqah menawarkan layanan aqiqah berkualitas, catering, dan penyediaan hewan qurban. Kami mudah ditemukan di Google Maps dengan mengetik "Teguh Aqiqah". Anda dapat melihat lokasi kami, jam operasional, nomor telepon, dan ulasan pelanggan lain di Google Maps. Kami siap menyambut Anda untuk memberikan informasi lebih lanjut tentang layanan kami. Jangan ragu untuk mengunjungi kami dan rasakan pelayanan terbaik dari Teguh Aqiqah!</p>
                 <div class="flex justify-center lg:justify-start space-x-4">
                   <img src="../public/asset/orang1.svg" alt="Team Member 1" class="w-1/4 max-w-[100px]">
                   <img src="../public/asset/orang2.svg" alt="Team Member 2" class="w-1/4 max-w-[100px]">
@@ -340,7 +347,7 @@
                       Jika tidak, uang kamu akan kembali!
                     </p>
                   </div>
-                  <button class="px-6 py-2 sm:px-8 sm:py-3 text-base sm:text-lg font-medium rounded-full bg-orange-500 text-white hover:bg-orange-600 transition duration-300 font-inter mx-auto lg:mx-0">
+                  <button data-aos="zoom-in" class="px-6 py-2 sm:px-8 sm:py-3 text-base sm:text-lg font-medium rounded-full bg-orange-500 text-white hover:bg-orange-600 transition duration-300 font-inter mx-auto lg:mx-0">
                     Pesan Sekarang
                   </button>
                 </div>
@@ -349,6 +356,55 @@
           </div>
         </section>
         
+        <!--FAQ section-->
+        <div x-data="{ selectedFaq: null, faqs: [
+          { q: 'Apa itu layanan aqiqah?', a: 'Aqiqah adalah ritual penyembelihan hewan sebagai ungkapan syukur atas kelahiran anak, biasanya dilakukan pada hari ketujuh setelah kelahiran.' },
+          { q: 'Berapa harga paket aqiqah, Apakah harga layanan terjangkau, dan Bagaimana sistem pembayarannya?', a: 'Kami menawarkan harga yang kompetitif dan transparan, Harga bervariasi tergantung jenis hewan dan jumlah porsi. Silakan cek daftar harga terbaru kami. kami menerima transfer bank, cash, atau metode pembayaran lain yang kami sediakan.' },
+          { q: 'Apakah bisa memesan catering saja tanpa aqiqah?', a: 'Ya, kami menyediakan layanan paket catering terpisah untuk berbagai acara.' },
+          { q: 'Bagaimana proses pemesanan aqiqah/catering/qurban?', a: 'Hubungi kami, pilih paket, tentukan tanggal, lakukan pembayaran, kami antar pesanan Anda.' },
+          { q: 'Apakah ada jaminan kehalalannya, bisa pesan untuk daerah luar kota,dan Apakah bisa custom menu?', a: 'Ya, semua proses kami lakukan sesuai syariat Islam dan bersertifikat halal. kami juga melayani pengiriman ke berbagai daerah dengan biaya tambahan. dan kami menerima pesanan menu sesuai keinginan pelanggan.' }
+        ] }" class="relative w-full">
+          <!-- Background SVG -->
+          <div class="absolute inset-0 z-0 overflow-hidden">
+            <img src="../public/asset/bg1.svg" alt="Wavy background" class="w-full h-full object-cover object-center" />
+          </div>
+          
+          <!-- Content -->
+          <section class="relative z-10 leading-relaxed mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
+            <div data-aos="zoom-in" class="space-y-3 text-center max-w-4xl mx-auto">
+              <h1 class="text-2xl sm:text-3xl lg:text-4xl text-orange-500 font-semibold font-circular">
+                Pertanyaan yang Sering Diajukan
+              </h1>
+              <p class="text-base sm:text-lg lg:text-xl text-gray-400 max-w-2xl mx-auto font-inter">
+                Menjawab semua pertanyaan yang sering diajukan. Masih bingung? Jangan ragu untuk menghubungi kami.
+              </p>
+            </div>
+            <div data-aos="zoom-in" class="mt-8 sm:mt-10 lg:mt-14 max-w-2xl mx-auto bg-white bg-opacity-80 rounded-lg shadow-lg p-4 sm:p-6 lg:p-8 font-serif">
+              <template x-for="(item, index) in faqs" :key="index">
+                <div class="space-y-3 mt-4 sm:mt-5 overflow-hidden border-b" @click="selectedFaq = selectedFaq === index ? null : index">
+                  <h4 class="cursor-pointer pb-3 sm:pb-4 flex items-center justify-between text-base sm:text-lg lg:text-xl text-gray-700 font-medium">
+                    <span x-text="item.q"></span>
+                    <svg x-show="selectedFaq === index" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                    </svg>
+                    <svg x-show="selectedFaq !== index" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v16m8-8H4" />
+                    </svg>
+                  </h4>
+                  <div x-ref="answerElRef" class="transition-[max-height,opacity] overflow-hidden duration-500 ease-in-out" :style="{
+                    maxHeight: selectedFaq === index ? '1000px' : '0px',
+                    opacity: selectedFaq === index ? 1 : 0,
+                  }">
+                    <div>
+                      <p class="text-sm sm:text-base lg:text-lg text-gray-500 pb-3 sm:pb-4" x-text="item.a"></p>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </section>
+        </div>
+
         <!--LIVECHAT-->
         <div class="fixed bottom-24 right-4 z-50 transition-all duration-300 ease-in-out sm:right-4 md:right-6 lg:bottom-6 lg:right-6 lg:top-auto">
           <!-- Chat Button (Visible when chat is closed) -->
