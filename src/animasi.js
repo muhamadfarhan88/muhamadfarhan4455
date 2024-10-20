@@ -20,3 +20,5 @@
       setInterval(updateText, 3000); // Muda o texto a cada 3 segundos
     }
   })();
+
+  

@@ -105,12 +105,10 @@
   <div class="grid grid-cols-12 items-center">
       <div class="col-span-12 lg:col-span-4 order-2 lg:order-1">
         <div>
-          <button class="px-8 py-4 bg-white text-orange-500 flex gap-2 text-sm font-bold drop-shadow-sm-shadow rounded-full mx-auto lg:mx-0">
-            Jelajahi <span id="text-typed">Layanan</span>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 12H19M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
+<button class="px-8 py-4 bg-white text-orange-500 flex gap-2 text-sm font-bold drop-shadow-sm-shadow rounded-full mx-auto lg:mx-0">
+  Jelajahi <span id="text-typed"></span>
+  <img src="../public/asset/Vector.svg" alt="">
+</button>
 <h1 class="mt-4 mb-6 md:mb-[43px] md:mt-[43px] lg:text-[55px] font-bold text-[40px] md-text-[52px] text-grey leading-tight text-center lg:text-start">Aqiqah, <span class="text-orange-500">Catering dan Qurban?</span> Kami Ahlinya!</h1>
 <p class="mb-8 md:mb-[43px] text-center lg:text-start text-grey opacity-50 text-base md:text-[18px] font-inter md:w-3/4 lg:w-full mx-auto">
   Nikmati layanan aqiqah, catering, dan qurban berkualitas tinggi yang aman, terjangkau, dan bikin acara keagamaan Anda sukses tanpa ribet dengan pengalaman yang menyenangkan.
@@ -128,22 +126,22 @@
         <div>
 
         </div>
-        <img src="../public/asset/hero1.png" class="w-full" alt="">
+        <img src="../public/asset/hero.png" class="w-full" alt="">
       </div>
   </div>
   <div class="col-span-12 order-3 py-8">
     <div class="flex justify-center lg:justify-between gap-7 sm:gap-14 items-center">
       <div>
-        <img src="../public/asset/rumah-zakat-seeklogo (1).svg" class="h-20 sm:h-24" alt="">
+        <img src="../public/asset/rumah-zakat-seeklogo.svg" class="h-20 sm:h-24" alt="">
       </div>
       <div>
-        <img src="../public/asset/lalamove-seeklogo (2).svg" class="h-5 sm:h-10" alt="">
+        <img src="../public/asset/lalamove-seeklogo.svg" class="h-5 sm:h-10" alt="">
       </div><div>
-        <img src="../public/asset/Gojek_logo_2019 (1).svg" class="h-5 sm:h-10" alt="">
+        <img src="../public/asset/Gojek_logo_2019.svg" class="h-5 sm:h-10" alt="">
       </div><div>
-        <img src="../public/asset/655c00d5da1ff-spx-express (1).svg" class="h-10 sm:h-20" alt="">
+        <img src="../public/asset/655c00d5da1ff-spx-express.svg" class="h-10 sm:h-20" alt="">
       </div><div>
-        <img src="../public/asset/Logo DANA (1).svg" class="h-5 sm:h-10" alt="">
+        <img src="../public/asset/Logo DANA.svg" class="h-5 sm:h-10" alt="">
       </div>
     </div>
   </div>
@@ -245,7 +243,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-10xl mx-auto">
               <!-- Repeat this article block for each package -->
               <article class="flex flex-col dark:bg-gray-50 rounded-lg overflow-hidden shadow-md">
-                <img alt="Paket Aqiqah" class="object-cover w-full h-52" src="../public/asset/goat-satay-2377229_1280 (1).jpg">
+                <img alt="Paket Aqiqah" class="object-cover w-full h-52" src="../public/asset/goat-satay-2377229_1280.jpg">
                 <div class="flex flex-col flex-1 p-6">
                   <a href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-600">Selengkapnya</a>
                   <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Paket Aqiqah Hemat Laki-Laki dan Perempuan</h3>
@@ -255,7 +253,7 @@
                 </div>
               </article>
               <article class="flex flex-col dark:bg-gray-50 rounded-lg overflow-hidden shadow-md">
-                <img alt="Paket Aqiqah" class="object-cover w-full h-52" src="../public/asset/gulai (1).jpg">
+                <img alt="Paket Aqiqah" class="object-cover w-full h-52" src="../public/asset/gulai.jpg">
                 <div class="flex flex-col flex-1 p-6">
                   <a href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-600">Selengkapnya</a>
                   <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Paket Aqiqah Kambing Betina dan Jantan</h3>
@@ -265,7 +263,7 @@
                 </div>
               </article>
               <article class="flex flex-col dark:bg-gray-50 rounded-lg overflow-hidden shadow-md">
-                <img alt="Paket Aqiqah" class="object-cover w-full h-52" src="../public/asset/nasikotak (1).jpg">
+                <img alt="Paket Aqiqah" class="object-cover w-full h-52" src="../public/asset/nasikotak.jpg">
                 <div class="flex flex-col flex-1 p-6">
                   <a href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-600">Selengkapnya</a>
                   <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Paket Nasi Box Teguh Aqiqah</h3>
@@ -275,7 +273,7 @@
                 </div>
               </article>
               <article class="flex flex-col dark:bg-gray-50 rounded-lg overflow-hidden shadow-md">
-                <img alt="Paket Aqiqah" class="object-cover w-full h-52" src="../public/asset/kambing (1).jpg">
+                <img alt="Paket Aqiqah" class="object-cover w-full h-52" src="../public/asset/kambing.jpg">
                 <div class="flex flex-col flex-1 p-6">
                   <a href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-violet-600">Selengkapnya</a>
                   <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Paket Hewan Qurban</h3>
@@ -519,7 +517,7 @@
     </div>
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Â© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbiteâ„¢</a>. All Rights Reserved.
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
         </span>
         <div class="flex mt-4 sm:justify-center sm:mt-0">
             <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
@@ -569,6 +567,11 @@
     </script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
     </script>
-    <script src="animasi.js"></script>
+    <script>
+      var typed = new Typed("#text-typed",{
+        strings: ["Layanan Aqiqah","Layanan Catering","Layanan Qurban","Layanan Aqiqah"],
+        typeSpeed : 90
+      })
+    </script>
 </body>
 </html>
