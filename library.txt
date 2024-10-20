@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 https://unsplash.com
 
 https://www.freepik.com
@@ -12,4 +13,20 @@ https://michalsnik.github.io/aos/
 
 https://seeklogo.com
 
+=======
+https://unsplash.com
+
+https://www.freepik.com
+
+https://floatui.com
+
+https://mambaui.com
+
+https://flowbite.com
+
+https://michalsnik.github.io/aos/
+
+https://seeklogo.com
+
+>>>>>>> b7cb441837025ce6ebf1ec28214a3036b25f3e80
 https://lordicon.com
