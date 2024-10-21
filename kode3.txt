@@ -125,6 +125,9 @@
         </div>
       </div>
       <div class="col-span-12 lg:col-span-8 order-1 lg:order-2 text-center">
+        <div>
+
+        </div>
         <img src="../public/asset/hero1.webp" class="w-full" alt="">
       </div>
   </div>
@@ -224,61 +227,52 @@
               <p class="font-inter text-sm md:text-base lg:text-lg xl:text-xl dark:text-gray-600">Aqiqah Teguh: Momen Berharga, Layanan Terpercaya.</p>
             </div>
         
-            <div class="flex flex-col md:flex-row justify-center items-center md:space-x-4">
-              <div class="flex-1 md:w-1/3 xl:w-1/3 bg-[#ffffff] shadow-xl rounded-2xl mb-4 md:mb-0">
-                <figure class="flex justify-center items-center rounded-2xl">
-                  <img src="https://tailwind-generator.b-cdn.net/images/card-generator/tailwind-card-generator-card-preview.png" alt="Card Preview" class="rounded-t-2xl">
-                </figure>
-                <div class="flex flex-col p-8">
-                  <div class="text-2xl font-bold text-[#374151] pb-6">Generator</div>
-                  <div class="text-lg text-[#374151]">Leverage a graphical editor to create beautiful web components.</div>
-                  <div class="flex justify-end pt-6">
-                    <button class="bg-[#e04a0e] text-[#ffffff] font-bold text-base p-3 rounded-lg hover:bg-orange-600 active:scale-95 transition-transform transform">Selengkapnya</button>
+            <div class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-10xl mx-auto">
+              <!-- Repeat this article block for each package -->
+              <article class="flex flex-col dark:bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                <img alt="Paket Aqiqah" class="object-cover w-full h-52" src="../public/asset/goat-satay-2377229_1280 (1).webp">
+                <div class="flex flex-col flex-1 p-6">
+                  <a href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-orange-600">Selengkapnya</a>
+                  <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Paket Aqiqah Hemat Laki-Laki dan Perempuan</h3>
+                  <div class="flex justify-center pt-3 text-xs dark:text-gray-600">
+                    <span>5.0 <ion-icon name="star" style="color: orange"></ion-icon></span>
                   </div>
                 </div>
-              </div>
-              <div class="flex-1 md:w-1/3 xl:w-1/3 bg-[#ffffff] shadow-xl rounded-2xl mb-4 md:mb-0">
-                <figure class="flex justify-center items-center rounded-2xl">
-                  <img src="https://tailwind-generator.b-cdn.net/images/card-generator/tailwind-card-generator-card-preview.png" alt="Card Preview" class="rounded-t-2xl">
-                </figure>
-                <div class="flex flex-col p-8">
-                  <div class="text-2xl font-bold text-[#374151] pb-6">Generator</div>
-                  <div class="text-lg text-[#374151]">Leverage a graphical editor to create beautiful web components.</div>
-                  <div class="flex justify-end pt-6">
-                    <button class="bg-[#e04a0e] text-[#ffffff] font-bold text-base p-3 rounded-lg hover:bg-orange-600 active:scale-95 transition-transform transform">Selengkapnya</button>
+              </article>
+              <article class="flex flex-col dark:bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                <img alt="Paket Aqiqah" class="object-cover w-full h-52" src="../public/asset/gulai (1).webp">
+                <div class="flex flex-col flex-1 p-6">
+                  <a href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-orange-600">Selengkapnya</a>
+                  <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Paket Aqiqah Kambing Betina dan Jantan</h3>
+                  <div class="flex justify-center pt-3 text-xs dark:text-gray-600">
+                    <span>4.8 <ion-icon name="star" style="color: orange"></ion-icon></span>
                   </div>
                 </div>
-              </div>
-              <div class="flex-1 md:w-1/3 xl:w-1/3 bg-[#ffffff] shadow-xl rounded-2xl mb-4 md:mb-0">
-                <figure class="flex justify-center items-center rounded-2xl">
-                  <img src="https://tailwind-generator.b-cdn.net/images/card-generator/tailwind-card-generator-card-preview.png" alt="Card Preview" class="rounded-t-2xl">
-                </figure>
-                <div class="flex flex-col p-8">
-                  <div class="text-2xl font-bold text-[#374151] pb-6">Generator</div>
-                  <div class="text-lg text-[#374151]">Leverage a graphical editor to create beautiful web components.</div>
-                  <div class="flex justify-end pt-6">
-                    <button class="bg-[#e04a0e] text-[#ffffff] font-bold text-base p-3 rounded-lg hover:bg-orange-600 active:scale-95 transition-transform transform">Selengkapnya</button>
+              </article>
+              <article class="flex flex-col dark:bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                <img alt="Paket Aqiqah" class="object-cover w-full h-52" src="../public/asset/nasikotak (1).webp">
+                <div class="flex flex-col flex-1 p-6">
+                  <a href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-orange-600">Selengkapnya</a>
+                  <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Paket Nasi Box Teguh Aqiqah</h3>
+                  <div class="flex justify-center pt-3 text-xs dark:text-gray-600">
+                    <span>4.9 <ion-icon name="star" style="color: orange"></ion-icon></span>
                   </div>
                 </div>
-              </div>
-              <div class="flex-1 md:w-1/3 xl:w-1/3 bg-[#ffffff] shadow-xl rounded-2xl mb-4 md:mb-0">
-                <figure class="flex justify-center items-center rounded-2xl">
-                  <img src="https://tailwind-generator.b-cdn.net/images/card-generator/tailwind-card-generator-card-preview.png" alt="Card Preview" class="rounded-t-2xl">
-                </figure>
-                <div class="flex flex-col p-8">
-                  <div class="text-2xl font-bold text-[#374151] pb-6">Generator</div>
-                  <div class="text-lg text-[#374151]">Leverage a graphical editor to create beautiful web components.</div>
-                  <div class="flex justify-end pt-6">
-                    <button class="bg-[#e04a0e] text-[#ffffff] font-bold text-base p-3 rounded-lg hover:bg-orange-600 active:scale-95 transition-transform transform">Selengkapnya</button>
+              </article>
+              <article class="flex flex-col dark:bg-gray-50 rounded-lg overflow-hidden shadow-md">
+                <img alt="Paket Aqiqah" class="object-cover w-full h-52" src="../public/asset/kambing (1).webp">
+                <div class="flex flex-col flex-1 p-6">
+                  <a href="#" class="text-xs tracking-wider uppercase hover:underline dark:text-orange-600">Selengkapnya</a>
+                  <h3 class="flex-1 py-2 text-lg font-semibold leading-snug">Paket Hewan Qurban</h3>
+                  <div class="flex justify-center pt-3 text-xs dark:text-gray-600">
+                    <span>4.8 <ion-icon name="star" style="color: orange"></ion-icon></span>
                   </div>
                 </div>
-              </div>
-            </div>
-            
+              </article>
             </div>
         
 
-            <div class="mt-16 p-4 lg:mt-24 flex flex-col lg:flex-row items-center">
+            <div class="mt-16 lg:mt-24 flex flex-col lg:flex-row items-center">
               <div class="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
                 <iframe 
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9037385527845!2d106.87240417315392!3d-6.27638579371238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3f3139db253%3A0x546c84d670441dea!2sTeguh%20aqiqah!5e0!3m2!1sid!2sid!4v1729331617671!5m2!1sid!2sid" 
@@ -464,13 +458,14 @@
 
 <!--footer-->
 
+
 <footer class="bg-white dark:bg-gray-900">
   <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
             <a href="https://flowbite.com/" class="flex items-center">
                 <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Teguh Aqiqah, Catering, dan Qurban</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
             </a>
         </div>
         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -511,7 +506,7 @@
     </div>
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
     <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">Â© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbiteâ„¢</a>. All Rights Reserved.
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
         </span>
         <div class="flex mt-4 sm:justify-center sm:mt-0">
             <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
