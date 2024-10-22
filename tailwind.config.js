@@ -10,8 +10,17 @@ module.exports = {
       colors : {
         "brown" : '#964B00',
       "grey" : '#222831',
-      "orange" : '#e04a0e',
       "amber": '#78350f',
+      "orange" : {
+        100: '#FFEDD5',
+        200: '#FEF3C7',
+        300: '#FDE68A',
+        400: '#FCD34D',
+        500: '#FBBF24',
+        600: '#F59E0B',
+        700: '#D97706',
+        800: '#B45309',
+        900: '#92400E',
       },
       dropShadow: {
         "sm-shadow" : [
@@ -37,4 +46,4 @@ module.exports = {
   },
   plugins: [],
 }
-
+}
