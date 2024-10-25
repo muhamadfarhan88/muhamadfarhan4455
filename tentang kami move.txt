@@ -1,0 +1,71 @@
+<!--Tentang kami Section-->
+<section class="py-8 sm:py-16 lg:py-24 my-4 sm:my-8 lg:my-16 bg-white text-gray-700 rounded-lg shadow-lg overflow-hidden">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative max-w-6xl mx-auto min-h-[800px] sm:min-h-[600px] lg:min-h-[800px] grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4">
+      
+      <!-- Left circles container -->
+      <div class="relative order-2 sm:order-1 h-[200px] sm:h-[300px] md:h-auto mt-8 sm:mt-0">
+        <div class="absolute top-0 left-4 sm:left-8 md:left-0 drop-shadow-md">
+          <img src="../public/asset/goat-satay-2377229_1280 (1).webp" alt="Team member" class="w-12 sm:w-12 h-10 sm:h-12 rounded-full object-cover">
+          <p class="text-xs sm:text-sm font-semibold">John Doe</p>
+          <p class="text-xs text-gray-700">Developer</p>
+        </div>
+
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:translate-y-0 sm:top-20 md:top-auto md:bottom-40 md:left-20">
+          <lord-icon
+              src="https://cdn.lordicon.com/stjagiwe.json"
+              trigger="loop"
+              style="width:60px;height:60px;sm:width:90px;sm:height:90px">
+          </lord-icon>
+        </div>
+
+        <div class="absolute top-0 right-4 sm:right-8 md:right-0 drop-shadow-md">
+          <img src="../public/asset/goat-satay-2377229_1280 (1).webp" alt="Team member" class="w-12 sm:w-12 h-10 sm:h-12 rounded-full object-cover">
+          <p class="text-xs sm:text-sm font-semibold">Tom Brown</p>
+          <p class="text-xs text-gray-700">Sales</p>
+        </div>
+
+        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 drop-shadow-md">
+          <img src="../public/asset/goat-satay-2377229_1280 (1).webp" alt="Team member" class="w-12 sm:w-12 h-10 sm:h-12 rounded-full object-cover">
+          <p class="text-xs sm:text-sm font-semibold">Mike Johnson</p>
+          <p class="text-xs text-gray-600">Manager</p>
+        </div>
+      </div>
+
+      <!-- Main content -->
+      <div class="order-1 sm:order-2 flex flex-col justify-center items-center text-center px-4 sm:px-6 md:px-0">
+        <h1 class="text-xl sm:text-2xl font-circular font-bold text-orange-500 leading-tight mb-4 sm:mb-6">Tentang Kami</h1>
+        <p class="text-gray-800 max-w-xl mx-auto text-sm sm:text-base font-inter text-center mb-6 sm:mb-8">
+          Teguhaqiqah adalah layanan aqiqah, catering, dan qurban yang berfokus pada kepuasan pelanggan dengan menyediakan paket aqiqah hemat, catering berkualitas, dan paket qurban. Kami berkomitmen untuk memberikan layanan terbaik dengan kualitas dan keamanan produk terjamin. Teguhaqiqah hadir untuk membantu Anda merayakan momen spesial dengan mudah dan menyenangkan.
+        </p>
+        <button class="px-6 py-2 sm:px-8 sm:py-3 text-sm sm:text-base font-medium bg-orange-500 text-white rounded-full hover:bg-orange-600 transition duration-300">
+          Konsultasi ?
+        </button>
+      </div>
+
+      <!-- Right circles container -->
+      <div class="relative order-3 h-[200px] sm:h-[300px] md:h-auto mt-8 sm:mt-0">
+        <div class="absolute top-0 left-4 sm:left-8 md:left-0 drop-shadow-md">
+          <img src="../public/asset/goat-satay-2377229_1280 (1).webp" alt="Team member" class="w-12 sm:w-12 h-10 sm:h-12 rounded-full object-cover">
+          <p class="text-xs sm:text-sm font-semibold">Sarah Wilson</p>
+          <p class="text-xs text-gray-600">Marketing</p>
+        </div>
+        
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 sm:translate-y-0 sm:top-20 md:top-40 md:right-20">
+          <lord-icon
+              src="https://cdn.lordicon.com/kfybwhoz.json"
+              trigger="loop"
+              style="width:60px;height:60px;sm:width:90px;sm:height:90px">
+          </lord-icon>
+        </div>
+
+        <div class="absolute bottom-0 right-4 sm:right-8 md:right-0 drop-shadow-md">
+          <img src="../public/asset/goat-satay-2377229_1280 (1).webp" alt="Team member" class="w-12 sm:w-12 h-10 sm:h-12 rounded-full object-cover">
+          <p class="text-xs sm:text-sm font-semibold">Lisa Davis</p>
+          <p class="text-xs text-gray-600">Support</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
