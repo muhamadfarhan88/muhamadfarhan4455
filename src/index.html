@@ -251,7 +251,7 @@
         <!--Tentang Kami-->
 <section class="py-12 dark:bg-gray-100 dark:text-gray-800 overflow-x-hidden">
   <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center max-w-full">
       <!-- Left Column - Form Section -->
       <div class="w-full p-6 md:p-8 lg:p-10 rounded-lg shadow-lg dark:bg-gray-50">
         <span class="block mb-2 dark:text-violet-600">Mamba design system</span>
@@ -357,7 +357,7 @@
         </button>
 
         <!-- Slides -->
-        <div class="relative min-h-[400px] md:min-h-[500px] lg:min-h-[600px] w-full">
+        <div class="relative min-h-[280px] md:min-h-[320px] lg:min-h-[380px] w-full">
           <template x-for="(slide, index) in slides">
             <div x-cloak x-show="currentSlideIndex == index + 1" class="absolute inset-0" x-transition.opacity.duration.1000ms>
               <!-- Title and description -->
