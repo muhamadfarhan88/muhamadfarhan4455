@@ -151,7 +151,7 @@
       </div>
   </div>
   <div class="col-span-12 order-3 py-8">
-    <div class="flex justify-center lg:justify-between gap-7 sm:gap-14 items-center">
+    <div class="flex justify-center lg:justify-between gap-7 sm:gap-14 items-center overflow-hidden">
       <div>
         <img src="../public/asset/rumah-zakat-seeklogo (1).svg" width="80" height="60" alt="" loading="lazy" alt="">
       </div>
@@ -249,153 +249,126 @@
         </section>
 
         <!--Tentang Kami-->
-<section class="py-12 dark:bg-gray-100 dark:text-gray-800 overflow-x-hidden">
-  <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center max-w-full">
-      <!-- Left Column - Form Section -->
-      <div class="w-full p-6 md:p-8 lg:p-10 rounded-lg shadow-lg dark:bg-gray-50">
-        <span class="block mb-2 dark:text-violet-600">Mamba design system</span>
-        <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold dark:text-gray-900 mb-6">Build it with Mamba</h1>
-        <p class="mb-8">
-          <span class="font-medium dark:text-gray-900">Modular and versatile.</span> 
-          Fugit vero facilis dolor sit neque cupiditate minus esse accusamus cumque at.
-        </p>
-        <form novalidate action="" class="space-y-4">
-          <div>
-            <label for="name" class="text-sm sr-only">Your name</label>
-            <input 
-              id="name" 
-              type="text" 
-              placeholder="Your name" 
-              class="w-full px-4 py-2 rounded-md focus:ring focus:dark:ring-violet-600 dark:border-gray-300"
-            >
-          </div>
-          <div>
-            <label for="lastname" class="text-sm sr-only">Email address</label>
-            <input 
-              id="lastname" 
-              type="text" 
-              placeholder="Email address" 
-              class="w-full px-4 py-2 rounded-md focus:ring focus:dark:ring-violet-600 dark:border-gray-300"
-            >
-          </div>
-          <button 
-            type="button" 
-            class="w-full py-3 font-semibold rounded dark:bg-violet-600 dark:text-gray-50 transition hover:opacity-90"
-          >
-            Join the waitlist
-          </button>
-        </form>
-      </div>
-
-      <!-- Right Column - Carousel Section -->
-      <div x-data="{
-        slides: [
-          {
-            imgSrc: 'https://penguinui.s3.amazonaws.com/component-assets/carousel/default-slide-1.webp',
-            imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',
-            title: 'Front end developers',
-            description: 'The architects of the digital world, constantly battling against their mortal enemy – browser compatibility.',
-            ctaUrl: 'https://example.com',
-            ctaText: 'Become a Developer',
-          },
-          {
-            imgSrc: 'https://penguinui.s3.amazonaws.com/component-assets/carousel/default-slide-2.webp',
-            imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',
-            title: 'Back end developers',
-            description: 'Because not all superheroes wear capes, some wear headphones and stare at terminal screens',
-            ctaUrl: 'https://example.com',
-            ctaText: 'Become a Developer',
-          },
-          {
-            imgSrc: 'https://penguinui.s3.amazonaws.com/component-assets/carousel/default-slide-3.webp',
-            imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',
-            title: 'Full stack developers',
-            description: 'Where &quot;burnout&quot; is just a fancy term for &quot;Tuesday&quot;.',
-            ctaUrl: 'https://example.com',
-            ctaText: 'Become a Developer',
-          },
-        ],
-        currentSlideIndex: 1,
-        previous() {
-          if (this.currentSlideIndex > 1) {
-            this.currentSlideIndex = this.currentSlideIndex - 1
-          } else {
-            this.currentSlideIndex = this.slides.length
-          }
-        },
-        next() {
-          if (this.currentSlideIndex < this.slides.length) {
-            this.currentSlideIndex = this.currentSlideIndex + 1
-          } else {
-            this.currentSlideIndex = 1
-          }
-        },
-      }" class="relative w-full overflow-hidden rounded-lg">
-        <!-- Previous button -->
-        <button 
-          type="button" 
-          class="absolute left-5 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center bg-white/40 p-2 text-neutral-600 transition hover:bg-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black active:outline-offset-0 dark:bg-neutral-950/40 dark:text-neutral-300 dark:hover:bg-neutral-950/60 dark:focus-visible:outline-white" 
-          aria-label="previous slide" 
-          x-on:click="previous()"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="3" class="size-5 md:size-6 pr-0.5" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-          </svg>
-        </button>
-
-        <!-- Next button -->
-        <button 
-          type="button" 
-          class="absolute right-5 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center bg-white/40 p-2 text-neutral-600 transition hover:bg-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black active:outline-offset-0 dark:bg-neutral-950/40 dark:text-neutral-300 dark:hover:bg-neutral-950/60 dark:focus-visible:outline-white" 
-          aria-label="next slide" 
-          x-on:click="next()"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="3" class="size-5 md:size-6 pl-0.5" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-          </svg>
-        </button>
-
-        <!-- Slides -->
-        <div class="relative min-h-[280px] md:min-h-[320px] lg:min-h-[380px] w-full">
-          <template x-for="(slide, index) in slides">
-            <div x-cloak x-show="currentSlideIndex == index + 1" class="absolute inset-0" x-transition.opacity.duration.1000ms>
-              <!-- Title and description -->
-              <div class="absolute inset-0 z-10 flex flex-col items-center justify-end gap-2 bg-gradient-to-t from-neutral-950/85 to-transparent px-6 md:px-12 lg:px-16 py-8 md:py-10 lg:py-12 text-center">
-                <h3 class="text-xl md:text-2xl lg:text-3xl font-bold text-white text-balance" x-text="slide.title" x-bind:aria-describedby="'slide' + (index + 1) + 'Description'"></h3>
-                <p class="text-sm md:text-base text-neutral-300 max-w-xl text-pretty" x-text="slide.description" x-bind:id="'slide' + (index + 1) + 'Description'"></p>
+        <section class="py-6 sm:py-8 md:py-12 overflow-x-hidden">
+          <div data-aos="zoom-in-left" class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-6 items-start">
+              <!-- Left Column - Form Section -->
+              <div class="w-full lg:w-1/2 p-4 sm:p-6 md:p-8 rounded-lg shadow-lg">
+                <span class="block mb-2 text-orange-500 text-sm sm:text-base">Tentang Kami</span>
+                <h1 class="text-lg sm:text-xl md:text-2xl font-circular font-bold mb-4 sm:mb-6">Teguh Aqiqah, Catering dan Qurban</h1>
+                <p class="text-xs sm:text-sm md:text-base mb-6 sm:mb-8">
+                  <span class="font-inter">Teguhaqiqah adalah layanan aqiqah dan catering yang mulai beroperasi sejak 2020 dan siap melayani 24 jam. Mereka menawarkan paket aqiqah hemat untuk berbagai keperluan, nasi box, catering dengan pilihan dari paket ekonomis hingga premium hingga paket qurban untuk idul adha. Dipilih karena kualitas dan keamanan produk yang terjamin, serta pelayanan ramah dan profesional, Teguhaqiqah memastikan setiap acara keagamaan Anda sukses. Dengan fasilitas pembayaran online yang aman dan tampilan responsif untuk berbagai perangkat, mereka memudahkan orang tua dan keluarga dalam perayaan spesial dan bisa konsultasi melalui live chat yang tersedia.</span>
+                </p>
+              </div>
+        
+              <!-- Right Column - Carousel Section -->
+              <div x-data="{
+                slides: [
+                  {
+                    imgSrc: 'https://penguinui.s3.amazonaws.com/component-assets/carousel/default-slide-1.webp',
+                    imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',
+                    title: 'Front end developers',
+                    description: 'The architects of the digital world, constantly battling against their mortal enemy – browser compatibility.',
+                    ctaUrl: 'https://example.com',
+                    ctaText: 'Hubungi Kami',
+                  },
+                  {
+                    imgSrc: 'https://penguinui.s3.amazonaws.com/component-assets/carousel/default-slide-2.webp',
+                    imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',
+                    title: 'Back end developers',
+                    description: 'Because not all superheroes wear capes, some wear headphones and stare at terminal screens',
+                    ctaUrl: 'https://example.com',
+                    ctaText: 'Hubungi Kami',
+                  },
+                  {
+                    imgSrc: 'https://penguinui.s3.amazonaws.com/component-assets/carousel/default-slide-3.webp',
+                    imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',
+                    title: 'Full stack developers',
+                    description: 'Where &quot;burnout&quot; is just a fancy term for &quot;Tuesday&quot;.',
+                    ctaUrl: 'https://example.com',
+                    ctaText: 'Hubungi Kami',
+                  },
+                ],
+                currentSlideIndex: 1,
+                previous() {
+                  if (this.currentSlideIndex > 1) {
+                    this.currentSlideIndex = this.currentSlideIndex - 1
+                  } else {
+                    this.currentSlideIndex = this.slides.length
+                  }
+                },
+                next() {
+                  if (this.currentSlideIndex < this.slides.length) {
+                    this.currentSlideIndex = this.currentSlideIndex + 1
+                  } else {
+                    this.currentSlideIndex = 1
+                  }
+                },
+              }" class="relative w-full lg:w-1/2 rounded-lg mt-6 lg:mt-0">
+                <!-- Previous button -->
                 <button 
                   type="button" 
-                  x-cloak 
-                  x-show="slide.ctaUrl !== null" 
-                  class="mt-4 cursor-pointer whitespace-nowrap rounded-md border border-white bg-transparent px-4 py-2 text-center text-xs md:text-sm font-medium tracking-wide text-white transition hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white active:opacity-100 active:outline-offset-0" 
-                  x-text="slide.ctaText"
-                ></button>
+                  class="absolute left-2 sm:left-4 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center bg-white/40 p-1.5 sm:p-2 text-neutral-600 transition hover:bg-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black active:outline-offset-0" 
+                  aria-label="previous slide" 
+                  x-on:click="previous()"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="3" class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                  </svg>
+                </button>
+        
+                <!-- Next button -->
+                <button 
+                  type="button" 
+                  class="absolute right-2 sm:right-4 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center bg-white/40 p-1.5 sm:p-2 text-neutral-600 transition hover:bg-white/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black active:outline-offset-0" 
+                  aria-label="next slide" 
+                  x-on:click="next()"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="3" class="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                </button>
+        
+                <!-- Slides -->
+                <div class="relative h-48 sm:h-64 md:h-80 lg:h-96 w-full overflow-x-hidden">
+                  <template x-for="(slide, index) in slides">
+                    <div x-cloak x-show="currentSlideIndex == index + 1" class="absolute inset-0" x-transition.opacity.duration.1000ms>
+                      <!-- Title and description -->
+                      <div class="absolute inset-0 z-10 flex flex-col items-center justify-end gap-1 sm:gap-2 bg-gradient-to-t from-neutral-950/85 to-transparent px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8 text-center">
+                        <h3 class="text-sm sm:text-base md:text-lg lg:text-xl font-bold text-white break-words" x-text="slide.title" x-bind:aria-describedby="'slide' + (index + 1) + 'Description'"></h3>
+                        <p class="text-xs sm:text-sm text-neutral-300 max-w-full break-words line-clamp-2 sm:line-clamp-3" x-text="slide.description" x-bind:id="'slide' + (index + 1) + 'Description'"></p>
+                        <button 
+                          type="button" 
+                          x-cloak 
+                          x-show="slide.ctaUrl !== null" 
+                          class="mt-2 sm:mt-3 cursor-pointer whitespace-normal rounded-md border border-white bg-transparent px-3 sm:px-4 py-1 sm:py-2 text-center text-xs sm:text-sm font-medium tracking-wide text-white transition hover:opacity-75 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white active:opacity-100 active:outline-offset-0" 
+                          x-text="slide.ctaText"
+                        ></button>
+                      </div>
+                      <img 
+                        class="absolute w-full h-full inset-0 object-cover text-neutral-300" 
+                        x-bind:src="slide.imgSrc" 
+                        x-bind:alt="slide.imgAlt" 
+                      />
+                    </div>
+                  </template>
+                </div>
+        
+                <!-- Indicators -->
+                <div class="absolute bottom-1 sm:bottom-2 md:bottom-3 left-1/2 z-20 flex -translate-x-1/2 gap-1 sm:gap-2" role="group" aria-label="slides">
+                  <template x-for="(slide, index) in slides">
+                    <button 
+                      class="w-1 h-1 sm:w-1.5 sm:h-1.5 cursor-pointer rounded-full transition" 
+                      x-on:click="currentSlideIndex = index + 1" 
+                      x-bind:class="[currentSlideIndex === index + 1 ? 'bg-neutral-300' : 'bg-neutral-300/50']" 
+                      x-bind:aria-label="'slide ' + (index + 1)"
+                    ></button>
+                  </template>
+                </div>
               </div>
-              <img 
-                class="absolute w-full h-full inset-0 object-cover text-neutral-600 dark:text-neutral-300" 
-                x-bind:src="slide.imgSrc" 
-                x-bind:alt="slide.imgAlt" 
-              />
             </div>
-          </template>
-        </div>
-
-        <!-- Indicators -->
-        <div class="absolute bottom-3 md:bottom-5 left-1/2 z-20 flex -translate-x-1/2 gap-3 px-2 py-1 rounded-md" role="group" aria-label="slides">
-          <template x-for="(slide, index) in slides">
-            <button 
-              class="size-2 cursor-pointer rounded-full transition" 
-              x-on:click="currentSlideIndex = index + 1" 
-              x-bind:class="[currentSlideIndex === index + 1 ? 'bg-neutral-300' : 'bg-neutral-300/50']" 
-              x-bind:aria-label="'slide ' + (index + 1)"
-            ></button>
-          </template>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+          </div>
+        </section>
 
 
         <!--layanan hidangan selengkapnya SECTION-->
@@ -499,8 +472,8 @@
               </div>
 
               <div class="w-full lg:w-1/2 text-center lg:text-left">
-                <h3 data-aos="zoom-in" class="text-xl sm:text-2xl lg:text-3xl font-circular text-orange-500 leading-tight font-bold mb-4">Temukan Layanan Aqiqah Yang Terbaik</h3>
-                <p data-aos="zoom-in" class="font-inter text-sm lg:text-base mb-6">Teguh Aqiqah menawarkan layanan aqiqah berkualitas, catering, dan penyediaan hewan qurban. Kami mudah ditemukan di Google Maps dengan mengetik "Teguh Aqiqah". Anda dapat melihat lokasi kami, jam operasional, nomor telepon, dan ulasan pelanggan lain di Google Maps. Kami siap menyambut Anda untuk memberikan informasi lebih lanjut tentang layanan kami. Jangan ragu untuk mengunjungi kami dan rasakan pelayanan terbaik dari Teguh Aqiqah!</p>
+                <h3 data-aos="zoom-in-right" class="text-xl sm:text-2xl lg:text-3xl font-circular text-orange-500 leading-tight font-bold mb-4">Temukan Layanan Aqiqah Yang Terbaik</h3>
+                <p data-aos="zoom-in-left" class="font-inter text-sm lg:text-base mb-6">Teguh Aqiqah menawarkan layanan aqiqah berkualitas, catering, dan penyediaan hewan qurban. Kami mudah ditemukan di Google Maps dengan mengetik "Teguh Aqiqah". Anda dapat melihat lokasi kami, jam operasional, nomor telepon, dan ulasan pelanggan lain di Google Maps. Kami siap menyambut Anda untuk memberikan informasi lebih lanjut tentang layanan kami. Jangan ragu untuk mengunjungi kami dan rasakan pelayanan terbaik dari Teguh Aqiqah!</p>
                 <div class="flex justify-center lg:justify-start space-x-4">
                   <img src="../public/asset/orang1.svg" alt="Team Member 1" class="w-1/4 max-w-[100px]">
                   <img src="../public/asset/orang2.svg" alt="Team Member 2" class="w-1/4 max-w-[100px]">
@@ -525,7 +498,7 @@
                 </div>
             
                 <!-- Content container -->
-                <div data-aos="zoom-in"  class="w-full lg:w-1/2 p-6 sm:p-8 lg:p-12 flex flex-col justify-center items-center lg:items-center">
+                <div data-aos="zoom-in-right"  class="w-full lg:w-1/2 p-6 sm:p-8 lg:p-12 flex flex-col justify-center items-center lg:items-center">
                   <svg 
                     xmlns="http://www.w3.org/2000/svg" 
                     viewBox="0 0 20 20" 
@@ -574,7 +547,7 @@
           
           <!-- Content -->
           <section class="relative z-10 leading-relaxed mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-24">
-            <div data-aos="zoom-in" class="space-y-3 text-center max-w-4xl mx-auto">
+            <div data-aos="zoom-in-left" class="space-y-3 text-center max-w-4xl mx-auto">
               <h1 class="text-xl sm:text-2xl lg:text-3xl text-orange-500 font-semibold font-circular">
                 Pertanyaan yang Sering Diajukan
               </h1>
@@ -582,7 +555,7 @@
                 Menjawab semua pertanyaan yang sering diajukan. Masih bingung? Jangan ragu untuk menghubungi kami.
               </p>
             </div>
-            <div data-aos="zoom-in" class="mt-8 sm:mt-10 lg:mt-14 max-w-2xl mx-auto bg-white bg-opacity-80 rounded-lg shadow-lg p-4 sm:p-6 lg:p-8 font-serif">
+            <div data-aos="zoom-in-right" class="mt-8 sm:mt-10 lg:mt-14 max-w-2xl mx-auto bg-white bg-opacity-80 rounded-lg shadow-lg p-4 sm:p-6 lg:p-8 font-serif">
               <template x-for="(item, index) in faqs" :key="index">
                 <div class="space-y-3 mt-4 sm:mt-5 overflow-hidden border-b" @click="selectedFaq = selectedFaq === index ? null : index">
                   <h4 class="cursor-pointer pb-3 sm:pb-4 flex items-center justify-between text-sm sm:text-base lg:text-lg text-gray-700 font-medium">
