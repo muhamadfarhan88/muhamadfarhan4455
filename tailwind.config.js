@@ -41,7 +41,7 @@ module.exports = {
           '0px 41px 89px rgba(0, 0, 0, 0.1)',
           '0px 0px 0px rgba(0, 0, 0, 0.1)'
         ],
-      }
+      },
     },
   },
   plugins: [
