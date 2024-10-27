@@ -670,10 +670,6 @@ video {
   top: 0.5rem;
 }
 
-.right-3 {
-  right: 0.75rem;
-}
-
 .z-0 {
   z-index: 0;
 }
@@ -1121,6 +1117,10 @@ video {
 
 .border {
   border-width: 1px;
+}
+
+.border-0 {
+  border-width: 0px;
 }
 
 .border-b {

@@ -19,6 +19,9 @@
     <!--alphine js-->
     <script src="//unpkg.com/alpinejs" defer></script>
 
+    <!--Gmaps-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
 </head>
 <body class="pb-20 font-['Inter']">
         <!-- NAVIGATION-->
@@ -441,14 +444,8 @@
 <!--GOOGLE MAPS-->
             <div class="mt-16 p-4 lg:mt-24 flex flex-col lg:flex-row items-center">
               <div class="w-full lg:w-1/2 mb-8 lg:mb-0 lg:pr-8">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.9037385527845!2d106.87240417315392!3d-6.27638579371238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3f3139db253%3A0x546c84d670441dea!2sTeguh%20aqiqah!5e0!3m2!1sid!2sid!4v1729331617671!5m2!1sid!2sid" 
-                  class="w-full h-64 sm:h-96 rounded-lg"
-                  style="border:0;" 
-                  allowfullscreen="" 
-                  loading="lazy" 
-                  referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <div id="map" class="w-full h-64 sm:h-96 border-0 rounded-lg"></div>
+                <div id="coordinates"></div>
               </div>
 
               <div class="w-full lg:w-1/2 text-center lg:text-left">
@@ -726,10 +723,13 @@
     </div>
   </div>
         </footer>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>   
+<!--flowbite-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+<!--lordicon-->   
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
+<!--livechatJS-->
     <script type="livechat" src="../src/livechat.js"></script>
+<!--DataAosanimasi-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -739,5 +739,7 @@
     </script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
     </script>
+<!--script Gmaps-->
+    <script src="../src/JS/googlemaps/map.js"></script>
 </body>
 </html>
