@@ -1,7 +1,8 @@
 // Inisialisasi peta
-var initialLatLng = [-6.276247154826614, 106.87525804336683]; // Koordinat Teguh Aqiqah
+var initialLatLng = [-6.276247154826614, 106.87525804336683];
 var map = L.map('map', {
-    maxZoom: 20  // Set max zoom ke 20
+    maxZoom: 20,
+    zoomControl: true
 }).setView(initialLatLng, 17);
 
 // Definisi layer-layer peta
@@ -24,13 +25,18 @@ var googleLayer = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}
 // Tambahkan layer default
 osmLayer.addTo(map);
 
-// Buat control layer untuk pemilihan basemap
+// Buat control layer dengan opsi collapsed
 var baseMaps = {
     "OpenStreetMap": osmLayer,
     "OpenStreetMap HOT": hotLayer,
     "Google Maps": googleLayer
 };
-L.control.layers(baseMaps).addTo(map);
+
+// Tambahkan control layers dengan opsi collapsed true
+var layerControl = L.control.layers(baseMaps, null, {
+    collapsed: true,
+    position: 'topright'
+}).addTo(map);
 
 // Custom icon untuk marker
 var blueIcon = L.icon({
@@ -42,9 +48,9 @@ var blueIcon = L.icon({
     shadowSize: [41, 41]
 });
 
-// Tambahkan marker tetap di lokasi default dengan popup
+// Tambahkan marker tetap dengan popup
 var marker = L.marker(initialLatLng, {
-    draggable: false, // Marker tidak bisa di-drag
+    draggable: false,
     icon: blueIcon
 }).addTo(map);
 
@@ -61,3 +67,22 @@ marker.on('click', function() {
 
 // Nonaktifkan event click pada peta
 map.off('click');
+
+// Handle resize untuk memastikan peta menyesuaikan dengan container
+window.addEventListener('resize', function() {
+    map.invalidateSize();
+});
+
+// Fungsi untuk mengatur tinggi peta
+function adjustMapHeight() {
+    const navbar = document.querySelector('.navbar');
+    const contentWrapper = document.querySelector('.content-wrapper');
+    const windowHeight = window.innerHeight;
+    const navbarHeight = navbar.offsetHeight;
+    contentWrapper.style.height = `${windowHeight - navbarHeight}px`;
+    map.invalidateSize();
+}
+
+// Panggil fungsi saat halaman dimuat dan diresize
+window.addEventListener('load', adjustMapHeight);
+window.addEventListener('resize', adjustMapHeight);
