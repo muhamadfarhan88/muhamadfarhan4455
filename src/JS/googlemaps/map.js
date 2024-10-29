@@ -1,24 +1,63 @@
 // Inisialisasi peta
 var initialLatLng = [-6.276247154826614, 106.87525804336683]; // Koordinat Teguh Aqiqah
-var map = L.map('map').setView(initialLatLng, 17); // Set view ke lokasi awal dengan zoom level 19
+var map = L.map('map', {
+    maxZoom: 20  // Set max zoom ke 20
+}).setView(initialLatLng, 17);
 
-// Tambahkan layer peta
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: '© OpenStreetMap'
+// Definisi layer-layer peta
+var osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 20,
+    attribution: '© OpenStreetMap contributors'
+});
+
+var hotLayer = L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+    maxZoom: 20,
+    attribution: '© OpenStreetMap contributors, Tiles style by Humanitarian OpenStreetMap Team'
+});
+
+var googleLayer = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}', {
+    maxZoom: 20,
+    subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+    attribution: '© Google Maps'
+});
+
+// Tambahkan layer default
+osmLayer.addTo(map);
+
+// Buat control layer untuk pemilihan basemap
+var baseMaps = {
+    "OpenStreetMap": osmLayer,
+    "OpenStreetMap HOT": hotLayer,
+    "Google Maps": googleLayer
+};
+L.control.layers(baseMaps).addTo(map);
+
+// Custom icon untuk marker
+var blueIcon = L.icon({
+    iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png',
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+});
+
+// Tambahkan marker tetap di lokasi default dengan popup
+var marker = L.marker(initialLatLng, {
+    draggable: false, // Marker tidak bisa di-drag
+    icon: blueIcon
 }).addTo(map);
 
-// Tambahkan marker di lokasi default
-var marker = new L.Marker(initialLatLng).addTo(map);
+// Tambahkan popup ke marker
+marker.bindPopup("<b>Teguh Aqiqah</b>").openPopup();
+
+// Tampilkan koordinat
 document.getElementById('coordinates').innerText = 'Teguh Aqiqah: ' + initialLatLng[0].toFixed(6) + ', ' + initialLatLng[1].toFixed(6);
 
-// Event listener untuk klik peta
-map.on('click', function (e) {
-    if (marker) { // Periksa apakah marker sudah ada
-        map.removeLayer(marker); // Hapus marker yang ada
-    }
-    marker = new L.Marker(e.latlng).addTo(map); // Tambahkan marker baru
-
-    // Tampilkan koordinat di elemen
-    document.getElementById('coordinates').innerText = 'Koordinat: ' + e.latlng.lat.toFixed(6) + ', ' + e.latlng.lng.toFixed(6);
+// Event ketika marker diklik
+marker.on('click', function() {
+    this.openPopup();
 });
+
+// Nonaktifkan event click pada peta
+map.off('click');
