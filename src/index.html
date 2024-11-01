@@ -183,7 +183,7 @@
 </div>
         </section>
 
-        <!-- FEATURE SECTION Section-->
+        <!-- FEATURE SECTION -->
         <section class="py-8 overflow-x-hidden">
   <div class="container mx-auto px-3">
     <!-- Grid Container -->
@@ -514,7 +514,7 @@
           </div>
         </section>
 
-          <!--content pertanyaan-->
+        <!--content pertanyaan-->
           <section class="container mx-auto px-4 py-16">
             <div class="grid lg:grid-cols-2 gap-12">
                 <!-- FAQ Section (Left on Large Screens) -->
@@ -592,79 +592,110 @@
                         <h3 class="text-orange-500 font-semibold">
                             Kontak
                         </h3>
-                        <p class="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                        <p class="text-gray-800 text-2xl font-semibold sm:text-3xl">
                             Hubungi Kami
                         </p>
                         <p class="text-gray-600">
                           Kami ingin mendengar kabar dari Anda! Silakan isi formulir di bawah ini.
                         </p>
                     </div>
-                    <div class="mt-12 mx-auto px-4 p-8 bg-white sm:max-w-lg sm:px-8 sm:rounded-xl shadow-md">
-                        <form
-                            onsubmit="event.preventDefault()"
-                            class="space-y-5"
-                        >
-                            <div>
-                                <label class="font-medium">
-                                    Nama Lengkap
-                                </label>
-                                <input
-                                    type="text"
-                                    required
-                                    class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
-                                />
-                            </div>
-                            <div>
-                                <label class="font-medium">
-                                    Email
-                                </label>
-                                <input
-                                    type="email"
-                                    required
-                                    class="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
-                                />
-                            </div>
-                            <div>
-                                <label class="font-medium">
-                                    Nomor Telepon
-                                </label>
-                                <div class="relative mt-2">
-                                    <div class="absolute inset-y-0 left-3 my-auto h-6 flex items-center border-r pr-2">
-                                        <select class="text-sm bg-transparent outline-none rounded-lg h-full">
-                                            <option>ID</option>
-                                            <option>US</option>
-                                            <option>ES</option>
-                                        </select>
-                                    </div>
-                                    <input
-                                        type="number"
-                                        placeholder="+62"
-                                        required
-                                        class="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
-                                    />
-                                </div>
-                            </div>
-                            <div>
-                                <label class="font-medium">
-                                    Pesan
-                                </label>
-                                <textarea 
-                                    required 
-                                    class="w-full mt-2 h-36 px-3 py-2 resize-none appearance-none bg-transparent outline-none border focus:border-gray-800 shadow-sm rounded-lg"
-                                ></textarea>
-                            </div>
-                            <button
-                                class="w-full px-4 py-2 text-white font-medium bg-orange-800 hover:bg-orange-700 active:bg-orange-900 rounded-lg duration-150"
-                            >
-                                Submit
-                            </button>
-                        </form>
+                    <div class="mt-18 mx-auto px-4 p-8 bg-white sm:max-w-lg sm:px-8 sm:rounded-xl shadow-md">
+                      <form 
+        onsubmit="event.preventDefault()" 
+        class="max-w-md mx-auto mt-10 space-y-5 p-6 bg-white"
+    >
+        <div>
+            <label 
+                for="fullName" 
+                class="block mb-2 text-sm font-medium text-gray-600"
+            >
+                Nama Lengkap
+            </label>
+            <input
+                id="fullName"
+                name="fullName"
+                type="text"
+                required
+                placeholder="Masukkan nama lengkap"
+                class="w-full px-3 py-2 text-gray-500 bg-white border rounded-lg focus:outline-none focus:border-gray-800 focus:ring-1 focus:ring-gray-600"
+            />
+        </div>
+
+        <div>
+            <label 
+                for="email" 
+                class="block mb-2 text-sm font-medium text-gray-600"
+            >
+                Email
+            </label>
+            <input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+                placeholder="Masukkan alamat email"
+                class="w-full px-3 py-2 text-gray-500 bg-white border rounded-lg focus:outline-none focus:border-gray-800 focus:ring-1 focus:ring-gray-600"
+            />
+        </div>
+
+        <div>
+            <label 
+                for="phoneNumber" 
+                class="block mb-2 text-sm font-medium text-gray-600"
+            >
+                Nomor Telepon
+            </label>
+            <div class="relative">
+                <div class="absolute inset-y-0 left-0 flex items-center">
+                    <select 
+                        name="phoneCode"
+                        class="h-full rounded-md border-transparent bg-transparent py-0 text-gray-500 focus:border-gray-800 focus:ring-1 focus:ring-gray-600"
+                    >
+                        <option>+62</option>
+                        <option>+1</option>
+                        <option>+44</option>
+                    </select>
+                </div>
+                <input
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    type="tel"
+                    required
+                    placeholder="Masukkan nomor telepon"
+                    class="w-full pl-16 px-3 py-2 text-gray-500 bg-white border rounded-lg focus:outline-none focus:border-gray-800 focus:ring-1 focus:ring-gray-600"
+                />
+            </div>
+        </div>
+
+        <div>
+            <label 
+                for="message" 
+                class="block mb-2 text-sm font-medium text-gray-600"
+            >
+                Pesan
+            </label>
+            <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Masukkan Pesan"
+                rows="4"
+                class="w-full px-3 py-2 text-gray-500 bg-white border rounded-lg resize-none focus:outline-none focus:border-gray-800 focus:ring-1 focus:ring-gray-600"
+            ></textarea>
+        </div>
+
+        <button
+            type="submit"
+            class="w-full px-4 py-2 text-white font-medium bg-orange-800 rounded-lg hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-600 focus:ring-opacity-50"
+        >
+            Submit
+        </button>
+    </form>
                     </div>
                 </div>
             </div>
         </section>
-        
-
         
 
         <!--footer-->
