@@ -22,7 +22,7 @@
 </head>
 <body class="pb-20 font-['Inter']">
         <!-- NAVIGATION-->
-        <nav class="py-9 px-4" x-data="{navopen : true}">
+        <nav id="landing-page" class="py-9 px-4" x-data="{navopen : true}">
         <div class="container mx-auto flex items-center justify-between">
           <div class="order-1 md:order-2">
             <img src="../public/asset/logonavbar (1) (1).svg" alt="TeguhAqiqah Logo" class="w-[125px] h-[105px] object-cover">
@@ -365,7 +365,7 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mx-auto">
                 <!-- Card 1 -->
-                <div class="flex flex-col bg-white shadow-md rounded-2xl overflow-hidden w-full sm:w-auto">
+                <div id="card1" class="flex flex-col bg-white shadow-md rounded-2xl overflow-hidden w-full sm:w-auto">
                     <figure class="flex justify-center items-center rounded-2xl h-48">
                         <img src="../public/asset/goat-satay-2377229_1280 (1).webp" alt="Card Preview" class="w-full h-full object-cover rounded-t-2xl">
                     </figure>
@@ -385,7 +385,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="flex flex-col bg-white shadow-md rounded-2xl overflow-hidden w-full sm:w-auto">
+                <div id="card2" class="flex flex-col bg-white shadow-md rounded-2xl overflow-hidden w-full sm:w-auto">
                     <figure class="flex justify-center items-center rounded-2xl h-48">
                         <img src="../public/asset/gulai (1).webp" alt="Card Preview" class="w-full h-full object-cover rounded-t-2xl">
                     </figure>
@@ -395,15 +395,17 @@
                             <div class="text-sm text-gray-600">Solusi Sempurna untuk Momen Spesial Anda.</div>
                         </div>
                         <div class="flex justify-end pt-4">
+                          <a href="../src/Layanan.html">
                             <button class="bg-orange-500 text-white font-semibold text-sm px-4 py-2 rounded-lg hover:bg-orange-600 active:scale-95 transition-transform transform">
                                 Selengkapnya
                             </button>
+                          </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="flex flex-col bg-white shadow-md rounded-2xl overflow-hidden w-full sm:w-auto">
+                <div id="card3" class="flex flex-col bg-white shadow-md rounded-2xl overflow-hidden w-full sm:w-auto">
                     <figure class="flex justify-center items-center rounded-2xl h-48">
                         <img src="../public/asset/nasikotak (1).webp" alt="Card Preview" class="w-full h-full object-cover rounded-t-2xl">
                     </figure>
@@ -413,15 +415,17 @@
                             <div class="text-sm text-gray-600">Paket Nasi Box untuk Acara Anda.</div>
                         </div>
                         <div class="flex justify-end pt-4">
+                          <a href="../src/Layanan.html">
                             <button class="bg-orange-500 text-white font-semibold text-sm px-4 py-2 rounded-lg hover:bg-orange-600 active:scale-95 transition-transform transform">
                                 Selengkapnya
                             </button>
+                          </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Card 4 -->
-                <div class="flex flex-col bg-white shadow-md rounded-2xl overflow-hidden w-full sm:w-auto">
+                <div id="card4" class="flex flex-col bg-white shadow-md rounded-2xl overflow-hidden w-full sm:w-auto">
                     <figure class="flex justify-center items-center rounded-2xl h-48">
                         <img src="../public/asset/kambing (1).webp" alt="Card Preview" class="w-full h-full object-cover rounded-t-2xl">
                     </figure>
@@ -431,9 +435,11 @@
                             <div class="text-sm text-gray-600">Kebahagiaan Masyarakat dengan Berqurban.</div>
                         </div>
                         <div class="flex justify-end pt-4">
+                          <a href="../src/Layanan.html">
                             <button class="bg-orange-500 text-white font-semibold text-sm px-4 py-2 rounded-lg hover:bg-orange-600 active:scale-95 transition-transform transform">
                                 Selengkapnya
                             </button>
+                          </a>
                         </div>
                     </div>
                 </div>
