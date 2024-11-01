@@ -2,32 +2,6 @@ https://unsplash.com
 
 https://www.freepik.com
 
-
-
-https://floatui.com
-
-
-
-https://mambaui.com
-
-
-
-https://flowbite.com
-
-
-
-https://michalsnik.github.io/aos/
-
-
-https://seeklogo.com
-
-=======
-
-
-https://unsplash.com
-
-https://www.freepik.com
-
 https://floatui.com
 
 https://mambaui.com
@@ -35,9 +9,14 @@ https://mambaui.com
 https://flowbite.com
 
 https://michalsnik.github.io/aos/
+(TIDAK JADI PAKAI)
 
 https://seeklogo.com
 
 https://lordicon.com
 
 undraw
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
+    </script>
+(TIDAK TAU INI SCRIPT APA TIDAK DIPAKAI)
