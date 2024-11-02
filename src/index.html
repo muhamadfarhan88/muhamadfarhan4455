@@ -32,10 +32,10 @@
           </div>
           <div class="order-2 hidden lg:block">
             <ul class="flex gap-16">
-                <li class="text-amber-900 font-bold text-sm font-circular opacity-50"><a href="index.html">BERANDA</a></li>
-                <li class="text-amber-900 font-bold text-sm font-circular opacity-50"><a href="#tentangkami">TENTANG</a></li>
-                <li class="text-amber-900 font-bold text-sm font-circular opacity-50"><a href="#layanan">LAYANAN</a></li>
-                <li class="text-amber-900 font-bold text-sm font-circular opacity-50"><a href="#kontakkami">KONTAK</a></li>
+                <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="index.html">BERANDA</a></li>
+                <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="#tentangkami">TENTANG</a></li>
+                <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="#layanan">LAYANAN</a></li>
+                <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="#kontakkami">KONTAK</a></li>
             </ul>
         </div>
           <div class="order-3 hidden md:block">
@@ -55,53 +55,58 @@
           x-transition:leave-end="opacity-0 scale-90">
           <ul class="flex justify-between items-start h-full flex-wrap md:flex-nowrap">
             <li class="flex flex-col items-center">
-              <button class="flex flex-col items-center no-underline gap-1">
+              <button class="flex flex-col items-center no-underline gap-1 hover:text-orange-800">
 <lord-icon
     src="https://cdn.lordicon.com/cnpvyndp.json"
+    trigger="hover"
     class="text-1xl mb-0" 
     colors="primary:#964B00" loading="lazy">
 </lord-icon> 
-                <span class="text-amber-900 text-xs font-normal"><a href="index.html">BERANDA</a></span>
+                <span class="text-grey text-xs font-normal"><a href="index.html">BERANDA</a></span>
               </button>
             </li>
             <li class="flex flex-col items-center">
-              <button class="flex flex-col items-center no-underline gap-1">
+              <button class="flex flex-col items-center no-underline gap-1 hover:text-orange-800">
                 <lord-icon
                     src="https://cdn.lordicon.com/lyrrgrsl.json"
+                    trigger="hover"
                     class="text-1xl mb-0" 
                     colors="primary:#964B00" loading="lazy">
                 </lord-icon>
-                <span class="text-amber-900 text-xs font-normal"><a href="#tentangkami">TENTANG KAMI</a></span>
+                <span class="text-grey text-xs font-normal"><a href="#tentangkami">TENTANG KAMI</a></span>
               </button>
             </li>
             <li class="flex flex-col items-center">
-              <button class="flex flex-col items-center no-underline gap-1">
+              <button class="flex flex-col items-center no-underline gap-1 hover:text-orange-800">
 <lord-icon
     src="https://cdn.lordicon.com/ktsahwvc.json"
+    trigger="hover"
     class="text-1xl mb-0" 
     colors="primary:#964B00" loading="lazy">
 </lord-icon>
-                <span class="text-amber-900 text-xs font-normal"><a href="#layanan">LAYANAN</a></span>
+                <span class="text-grey text-xs font-normal"><a href="#layanan">LAYANAN</a></span>
               </button>
             </li>
             <li class="flex flex-col items-center">
-              <button class="flex flex-col items-center  no-underline gap-1">
+              <button class="flex flex-col items-center  no-underline gap-1 hover:text-orange-800">
 <lord-icon
     src="https://cdn.lordicon.com/kddybgok.json"
+    trigger="hover"
     class="text-1xl mb-0" 
     colors="primary:#964B00" loading="lazy">
 </lord-icon>
-                <span class="text-amber-900 text-xs font-normal"><a href="#kontakkami">KONTAK</a></span>
+                <span class="text-grey text-xs font-normal"><a href="#kontakkami">KONTAK</a></span>
                     </a>
                 </li>
                 <li class="flex flex-col items-center">
-                    <button @click="open = !open" class="flex flex-col items-center  no-underline gap-1">
+                    <button @click="open = !open" class="flex flex-col items-center  no-underline gap-1 hover:text-orange-800">
 <lord-icon
     src="https://cdn.lordicon.com/lqxfrxad.json"
+    trigger="hover"
     class="text-1xl mb-0"
     colors="primary:#964B00" loading="lazy">
 </lord-icon>
-                        <span class="text-amber-900 text-xs font-normal">PESAN</span>
+                        <span class="text-grey text-xs font-normal">PESAN</span>
                     </a>
                 </li>
             </ul>
