@@ -188,10 +188,10 @@
           </div>
         </div>
       </div>
-              </section>
+    </section>
 
 <!--Paket Aqiqah Hemat Laki-Laki-->
-  <section class=" card1 py-20 bg-gray-100 text-gray-800">
+  <section id="card1" class="py-20 bg-gray-100 text-gray-800">
     <div class="container px-4 mx-auto">
       <div class="max-w-2xl mx-auto mb-16 text-center">
         <span class="font-bold tracking-wider uppercase text-orange-800">List</span>
@@ -248,10 +248,18 @@
           <label for="Nama Lengkap" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Nama Lengkap</label>
           <input type="text" name="Nama Lengkap" id="Nama Lengkap" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Nama Lengkap" required="">
       </div>
-      <div class="col-span-2">
+      <div class="col-span-2 sm:col-span-1">
           <label for="nomorwhatsapp" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Nomor Whatsapp</label>
           <input type="number" name="nomorwhatsapp" id="nomorwhatsapp" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Contoh: 081288930761" required="">
       </div>
+      <div class="col-span-2 sm:col-span-1">
+        <label for="category" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Pilih Paket</label>
+        <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+            <option selected="">Select category</option>
+            <option value="Paket">Paket Hemat I</option>
+            <option value="Paket">Paket Hemat II</option>
+        </select>
+    </div>
       <div class="col-span-2">
           <label for="alamat" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Alamat Pengiriman</label>
           <input type="text" name="alamat" id="alamat" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Masukkan Alamat" required="">
@@ -348,10 +356,18 @@
           <label for="Nama Lengkap" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Nama Lengkap</label>
           <input type="text" name="Nama Lengkap" id="Nama Lengkap" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Nama Lengkap" required="">
       </div>
-      <div class="col-span-2">
+      <div class="col-span-2 sm:col-span-1">
           <label for="nomorwhatsapp" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Nomor Whatsapp</label>
           <input type="number" name="nomorwhatsapp" id="nomorwhatsapp" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Contoh: 081288930761" required="">
       </div>
+      <div class="col-span-2 sm:col-span-1">
+        <label for="category" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Pilih Paket</label>
+        <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+            <option selected="">Select category</option>
+            <option value="Paket">Paket Hemat I</option>
+            <option value="Paket">Paket Hemat II</option>
+        </select>
+    </div>
       <div class="col-span-2">
           <label for="alamat" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Alamat Pengiriman</label>
           <input type="text" name="alamat" id="alamat" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Masukkan Alamat" required="">
@@ -426,7 +442,7 @@
   </section>
 
   <!--Paket Aqiqah Hemat Perempuan-->
-  <section class="card1 py-20 bg-gray-100 text-gray-800">
+  <section id="card1" class="py-20 bg-gray-100 text-gray-800">
     <div class="container px-4 mx-auto">
       <div class="max-w-2xl mx-auto mb-16 text-center">
         <span class="font-bold tracking-wider uppercase text-orange-800">List</span>
@@ -482,10 +498,18 @@
           <label for="Nama Lengkap" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Nama Lengkap</label>
           <input type="text" name="Nama Lengkap" id="Nama Lengkap" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Nama Lengkap" required="">
       </div>
-      <div class="col-span-2">
+      <div class="col-span-2 sm:col-span-1">
           <label for="nomorwhatsapp" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Nomor Whatsapp</label>
           <input type="number" name="nomorwhatsapp" id="nomorwhatsapp" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Contoh: 081288930761" required="">
       </div>
+      <div class="col-span-2 sm:col-span-1">
+        <label for="category" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Pilih Paket</label>
+        <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+            <option selected="">Select category</option>
+            <option value="Paket">Paket Hemat I</option>
+            <option value="Paket">Paket Hemat II</option>
+        </select>
+    </div>
       <div class="col-span-2">
           <label for="alamat" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Alamat Pengiriman</label>
           <input type="text" name="alamat" id="alamat" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Masukkan Alamat" required="">
@@ -582,10 +606,18 @@
           <label for="Nama Lengkap" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Nama Lengkap</label>
           <input type="text" name="Nama Lengkap" id="Nama Lengkap" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Nama Lengkap" required="">
       </div>
-      <div class="col-span-2">
+      <div class="col-span-2 sm:col-span-1">
           <label for="nomorwhatsapp" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Nomor Whatsapp</label>
           <input type="number" name="nomorwhatsapp" id="nomorwhatsapp" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Contoh: 081288930761" required="">
       </div>
+      <div class="col-span-2 sm:col-span-1">
+        <label for="category" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Pilih Paket</label>
+        <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+            <option selected="">Select category</option>
+            <option value="Paket">Paket Hemat I</option>
+            <option value="Paket">Paket Hemat II</option>
+        </select>
+    </div>
       <div class="col-span-2">
           <label for="alamat" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Alamat Pengiriman</label>
           <input type="text" name="alamat" id="alamat" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Masukkan Alamat" required="">
@@ -658,6 +690,582 @@
     </div>
   </section>
 
+  <!--Paket Aqiqah Kambing Betina-->
+  <section id="card2" class="py-20 bg-white text-gray-800 ">
+    
+    <!--PAKET KAMBING BETINA A-->
+    <div class="container px-4 mx-auto">
+      <div class="max-w-2xl mx-auto mb-16 text-center">
+        <span class="font-bold tracking-wider uppercase text-orange-800">List</span>
+        <h2 class="text-4xl font-bold lg:text-5xl">Paket Kambing Betina</h2>
+      </div>
+      <div class="flex flex-wrap items-stretch -mx-4">
+        <div class="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
+          <div class="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-orange-800 text-gray-50">
+            <div class="space-y-2">
+              <h4 class="text-2xl font-bold">Paket Kambing Betina</h4>
+              <span class="text-6xl font-bold">Paket A</span>
+            </div>
+            <ul class="flex-1 mb-6">
+              <li class="flex mb-2 space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Rp. 1.700.000</span>
+              </li>
+              <li class="flex mb-2 space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Sate 200 tusuk</span>
+              </li>
+              <li class="flex mb-2 space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Gulai 50 porsi</span>
+              </li>
+            </ul>
+            <!-- Modal toggle -->
+            <button data-modal-target="crud-modal-paket-kambing-betina-a" data-modal-toggle="crud-modal-paket-kambing-betina-a" type="button" class="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded bg-gray-100 text-orange-800">Pesan</button>
+          </div>
+        </div>
+        <!-- Main modal -->
+<div id="crud-modal-paket-kambing-betina-a" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+  <div class="relative p-4 w-full max-w-md max-h-full">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <!-- Modal header -->
+          <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+              <h3 class="text-lg font-semibold text-orange-800 dark:text-white">
+                  Paket Kambing Betina A
+              </h3>
+              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="crud-modal-paket-kambing-betina-a">
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+              </button>
+          </div>
+          <!-- Modal body -->
+<form class="p-3 md:p-4">
+  <div class="grid gap-3 mb-3 grid-cols-2">
+      <div class="col-span-2">
+          <label for="Nama Lengkap" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Nama Lengkap</label>
+          <input type="text" name="Nama Lengkap" id="Nama Lengkap" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Nama Lengkap" required="">
+      </div>
+      <div class="col-span-2 sm:col-span-1">
+          <label for="nomorwhatsapp" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Nomor Whatsapp</label>
+          <input type="number" name="nomorwhatsapp" id="nomorwhatsapp" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Contoh: 081288930761" required="">
+      </div>
+      <div class="col-span-2 sm:col-span-1">
+        <label for="category" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Pilih Paket</label>
+        <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+            <option selected="">Select category</option>
+            <option value="A">Paket Kambing Betina A</option>
+            <option value="B">Paket Kambing Betina B</option>
+            <option value="C">Paket Kambing Betina C</option>
+            <option value="D">Paket Kambing Betina D</option>
+            <option value="Super">Paket Super</option>
+        </select>
+    </div>
+      <div class="col-span-2">
+          <label for="alamat" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Alamat Pengiriman</label>
+          <input type="text" name="alamat" id="alamat" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Masukkan Alamat" required="">
+      </div>
+      <div class="col-span-2">
+          <label for="category" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Pilih Bank</label>
+          <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+              <option selected="">Select category</option>
+              <option value="BCA">BCA-1650368688-Muhamad Farhan</option>
+              <option value="BRI">BRI-771601013900530-Muhamad Farhan</option>
+              <option value="DANA">DANA-081288930761</option>
+          </select>
+      </div>
+      <div class="col-span-2 sm:col-span-1">
+        <label for="file_input" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Bukti Pembayaran</label>
+        <input id="file_input" type="file" name="file-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required="">
+    </div>
+    <div class="col-span-2 sm:col-span-1">
+      <label for="event_date" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Tanggal Acara</label>
+      <input id="event_date" type="date" name="event-date" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+  </div>
+      <div class="col-span-2">
+          <label for="description" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Deskripsi Request</label>
+          <textarea id="description" rows="3" class="block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500" placeholder="Masukkan deskripsi request"></textarea>                    
+      </div>
+  </div>
+  <button type="submit" class="text-white inline-flex items-center bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg -orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">
+      <svg class="me-1 -ms-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+      Kirim Pesanan
+  </button>
+</form>
+      </div>
+  </div>
+</div> 
+
+<!--PAKET KAMBING BETINA B-->
+        <div class="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
+          <div class="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-orange-800 text-gray-50">
+            <div class="space-y-2">
+              <h4 class="text-2xl font-bold">Paket Kambing Betina</h4>
+              <span class="text-6xl font-bold">Paket B
+              </span>
+            </div>
+            <ul class="flex-1 space-y-2">
+              <li class="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Rp. 1.900.000</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Sate 250 tusuk</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Gulai 60 Porsi</span>
+              </li>
+            </ul>
+            <!-- Modal toggle -->
+            <button data-modal-target="crud-modal-paket-kambing-betina-b" data-modal-toggle="crud-modal-paket-kambing-betina-b" type="button" class="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded bg-gray-100 text-orange-800">Pesan</button>
+          </div>
+        </div>
+        <!-- Main modal -->
+<div id="crud-modal-paket-kambing-betina-b" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+  <div class="relative p-4 w-full max-w-md max-h-full">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <!-- Modal header -->
+          <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+              <h3 class="text-lg font-semibold text-orange-800 dark:text-white">
+                  Paket Kambing Betina B
+              </h3>
+              <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="crud-modal-paket-kambing-betina-b">
+                  <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                  </svg>
+                  <span class="sr-only">Close modal</span>
+              </button>
+          </div>
+          <!-- Modal body -->
+<form class="p-3 md:p-4">
+  <div class="grid gap-3 mb-3 grid-cols-2">
+      <div class="col-span-2">
+          <label for="Nama Lengkap" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Nama Lengkap</label>
+          <input type="text" name="Nama Lengkap" id="Nama Lengkap" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Nama Lengkap" required="">
+      </div>
+      <div class="col-span-2 sm:col-span-1">
+          <label for="nomorwhatsapp" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Nomor Whatsapp</label>
+          <input type="number" name="nomorwhatsapp" id="nomorwhatsapp" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Contoh: 081288930761" required="">
+      </div>
+      <div class="col-span-2 sm:col-span-1">
+        <label for="category" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Pilih Paket</label>
+        <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+            <option selected="">Select category</option>
+            <option value="A">Paket Kambing Betina A</option>
+            <option value="B">Paket Kambing Betina B</option>
+            <option value="C">Paket Kambing Betina C</option>
+            <option value="D">Paket Kambing Betina D</option>
+            <option value="Super">Paket Super</option>
+        </select>
+    </div>
+      <div class="col-span-2">
+          <label for="alamat" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Alamat Pengiriman</label>
+          <input type="text" name="alamat" id="alamat" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Masukkan Alamat" required="">
+      </div>
+      <div class="col-span-2">
+          <label for="category" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Pilih Bank</label>
+          <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+              <option selected="">Select category</option>
+              <option value="BCA">BCA-1650368688-Muhamad Farhan</option>
+              <option value="BRI">BRI-771601013900530-Muhamad Farhan</option>
+              <option value="DANA">DANA-081288930761</option>
+          </select>
+      </div>
+      <div class="col-span-2 sm:col-span-1">
+        <label for="file_input" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Bukti Pembayaran</label>
+        <input id="file_input" type="file" name="file-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required="">
+    </div>
+    <div class="col-span-2 sm:col-span-1">
+      <label for="event_date" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Tanggal Acara</label>
+      <input id="event_date" type="date" name="event-date" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+  </div>
+      <div class="col-span-2">
+          <label for="description" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Deskripsi Request</label>
+          <textarea id="description" rows="3" class="block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500" placeholder="Masukkan deskripsi request"></textarea>                    
+      </div>
+  </div>
+  <button type="submit" class="text-white inline-flex items-center bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg -orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">
+      <svg class="me-1 -ms-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+      Kirim Pesanan
+  </button>
+</form>
+      </div>
+  </div>
+</div> 
+
+<!--PAKET KAMBING BETINA C-->
+<div class="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
+  <div class="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-orange-800 text-gray-50">
+    <div class="space-y-2">
+      <h4 class="text-2xl font-bold">Paket Kambing Betina</h4>
+      <span class="text-6xl font-bold">Paket C
+      </span>
+    </div>
+    <ul class="flex-1 space-y-2">
+      <li class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+        </svg>
+        <span>Rp. 2.100.000</span>
+      </li>
+      <li class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+        </svg>
+        <span>Sate 300 tusuk</span>
+      </li>
+      <li class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+        </svg>
+        <span>Gulai 70 Porsi</span>
+      </li>
+    </ul>
+    <!-- Modal toggle -->
+    <button data-modal-target="crud-modal-paket-kambing-betina-c" data-modal-toggle="crud-modal-paket-kambing-betina-c" type="button" class="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded bg-gray-100 text-orange-800">Pesan</button>
+  </div>
+</div>
+<!-- Main modal -->
+<div id="crud-modal-paket-kambing-betina-c" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+<div class="relative p-4 w-full max-w-md max-h-full">
+<!-- Modal content -->
+<div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+  <!-- Modal header -->
+  <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+      <h3 class="text-lg font-semibold text-orange-800 dark:text-white">
+          Paket Kambing Betina C
+      </h3>
+      <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="crud-modal-paket-kambing-betina-c">
+          <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+          </svg>
+          <span class="sr-only">Close modal</span>
+      </button>
+  </div>
+  <!-- Modal body -->
+<form class="p-3 md:p-4">
+<div class="grid gap-3 mb-3 grid-cols-2">
+<div class="col-span-2">
+  <label for="Nama Lengkap" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Nama Lengkap</label>
+  <input type="text" name="Nama Lengkap" id="Nama Lengkap" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Nama Lengkap" required="">
+</div>
+<div class="col-span-2 sm:col-span-1">
+  <label for="nomorwhatsapp" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Nomor Whatsapp</label>
+  <input type="number" name="nomorwhatsapp" id="nomorwhatsapp" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Contoh: 081288930761" required="">
+</div>
+<div class="col-span-2 sm:col-span-1">
+<label for="category" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Pilih Paket</label>
+<select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+    <option selected="">Select category</option>
+    <option value="A">Paket Kambing Betina A</option>
+    <option value="B">Paket Kambing Betina B</option>
+    <option value="C">Paket Kambing Betina C</option>
+    <option value="D">Paket Kambing Betina D</option>
+    <option value="Super">Paket Super</option>
+</select>
+</div>
+<div class="col-span-2">
+  <label for="alamat" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Alamat Pengiriman</label>
+  <input type="text" name="alamat" id="alamat" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Masukkan Alamat" required="">
+</div>
+<div class="col-span-2">
+  <label for="category" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Pilih Bank</label>
+  <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+      <option selected="">Select category</option>
+      <option value="BCA">BCA-1650368688-Muhamad Farhan</option>
+      <option value="BRI">BRI-771601013900530-Muhamad Farhan</option>
+      <option value="DANA">DANA-081288930761</option>
+  </select>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<label for="file_input" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Bukti Pembayaran</label>
+<input id="file_input" type="file" name="file-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required="">
+</div>
+<div class="col-span-2 sm:col-span-1">
+<label for="event_date" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Tanggal Acara</label>
+<input id="event_date" type="date" name="event-date" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+</div>
+<div class="col-span-2">
+  <label for="description" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Deskripsi Request</label>
+  <textarea id="description" rows="3" class="block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500" placeholder="Masukkan deskripsi request"></textarea>                    
+</div>
+</div>
+<button type="submit" class="text-white inline-flex items-center bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg -orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">
+<svg class="me-1 -ms-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+Kirim Pesanan
+</button>
+</form>
+</div>
+</div>
+</div> 
+
+<!--PAKET KAMBING BETINA D-->
+<div class="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
+  <div class="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-orange-800 text-gray-50">
+    <div class="space-y-2">
+      <h4 class="text-2xl font-bold">Paket Kambing Betina</h4>
+      <span class="text-6xl font-bold">Paket D
+      </span>
+    </div>
+    <ul class="flex-1 space-y-2">
+      <li class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+        </svg>
+        <span>Rp. 2.400.000</span>
+      </li>
+      <li class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+        </svg>
+        <span>Sate 375 tusuk</span>
+      </li>
+      <li class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+        </svg>
+        <span>Gulai 90 Porsi</span>
+      </li>
+    </ul>
+    <!-- Modal toggle -->
+    <button data-modal-target="crud-modal-paket-kambing-betina-d" data-modal-toggle="crud-modal-paket-kambing-betina-d" type="button" class="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded bg-gray-100 text-orange-800">Pesan</button>
+  </div>
+</div>
+<!-- Main modal -->
+<div id="crud-modal-paket-kambing-betina-d" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+<div class="relative p-4 w-full max-w-md max-h-full">
+<!-- Modal content -->
+<div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+  <!-- Modal header -->
+  <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+      <h3 class="text-lg font-semibold text-orange-800 dark:text-white">
+          Paket Kambing Betina D
+      </h3>
+      <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="crud-modal-paket-kambing-betina-d">
+          <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+          </svg>
+          <span class="sr-only">Close modal</span>
+      </button>
+  </div>
+  <!-- Modal body -->
+<form class="p-3 md:p-4">
+<div class="grid gap-3 mb-3 grid-cols-2">
+<div class="col-span-2">
+  <label for="Nama Lengkap" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Nama Lengkap</label>
+  <input type="text" name="Nama Lengkap" id="Nama Lengkap" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Nama Lengkap" required="">
+</div>
+<div class="col-span-2 sm:col-span-1">
+  <label for="nomorwhatsapp" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Nomor Whatsapp</label>
+  <input type="number" name="nomorwhatsapp" id="nomorwhatsapp" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Contoh: 081288930761" required="">
+</div>
+<div class="col-span-2 sm:col-span-1">
+<label for="category" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Pilih Paket</label>
+<select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+    <option selected="">Select category</option>
+    <option value="A">Paket Kambing Betina A</option>
+    <option value="B">Paket Kambing Betina B</option>
+    <option value="C">Paket Kambing Betina C</option>
+    <option value="D">Paket Kambing Betina D</option>
+    <option value="Super">Paket Super</option>
+</select>
+</div>
+<div class="col-span-2">
+  <label for="alamat" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Alamat Pengiriman</label>
+  <input type="text" name="alamat" id="alamat" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Masukkan Alamat" required="">
+</div>
+<div class="col-span-2">
+  <label for="category" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Pilih Bank</label>
+  <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+      <option selected="">Select category</option>
+      <option value="BCA">BCA-1650368688-Muhamad Farhan</option>
+      <option value="BRI">BRI-771601013900530-Muhamad Farhan</option>
+      <option value="DANA">DANA-081288930761</option>
+  </select>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<label for="file_input" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Bukti Pembayaran</label>
+<input id="file_input" type="file" name="file-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required="">
+</div>
+<div class="col-span-2 sm:col-span-1">
+<label for="event_date" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Tanggal Acara</label>
+<input id="event_date" type="date" name="event-date" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+</div>
+<div class="col-span-2">
+  <label for="description" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Deskripsi Request</label>
+  <textarea id="description" rows="3" class="block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500" placeholder="Masukkan deskripsi request"></textarea>                    
+</div>
+</div>
+<button type="submit" class="text-white inline-flex items-center bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg -orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">
+<svg class="me-1 -ms-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+Kirim Pesanan
+</button>
+</form>
+</div>
+</div>
+</div> 
+
+<!--PAKET KAMBING BETINA SUPER-->
+<div class="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
+  <div class="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-orange-800 text-gray-50">
+    <div class="space-y-2">
+      <h4 class="text-2xl font-bold">Paket Kambing Betina</h4>
+      <span class="text-6xl font-bold">Paket Super
+      </span>
+    </div>
+    <ul class="flex-1 space-y-2">
+      <li class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+        </svg>
+        <span>Rp. 2.700.000</span>
+      </li>
+      <li class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+        </svg>
+        <span>Sate 450 tusuk</span>
+      </li>
+      <li class="flex items-center space-x-2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+        </svg>
+        <span>Gulai 100 Porsi</span>
+      </li>
+    </ul>
+    <!-- Modal toggle -->
+    <button data-modal-target="crud-modal-paket-kambing-betina-super" data-modal-toggle="crud-modal-paket-kambing-betina-super" type="button" class="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded bg-gray-100 text-orange-800">Pesan</button>
+  </div>
+</div>
+<!-- Main modal -->
+<div id="crud-modal-paket-kambing-betina-super" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+<div class="relative p-4 w-full max-w-md max-h-full">
+<!-- Modal content -->
+<div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+  <!-- Modal header -->
+  <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+      <h3 class="text-lg font-semibold text-orange-800 dark:text-white">
+          Paket Kambing Betina Super
+      </h3>
+      <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-toggle="crud-modal-paket-kambing-betina-super">
+          <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+          </svg>
+          <span class="sr-only">Close modal</span>
+      </button>
+  </div>
+  <!-- Modal body -->
+<form class="p-3 md:p-4">
+<div class="grid gap-3 mb-3 grid-cols-2">
+<div class="col-span-2">
+  <label for="Nama Lengkap" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Nama Lengkap</label>
+  <input type="text" name="Nama Lengkap" id="Nama Lengkap" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Nama Lengkap" required="">
+</div>
+<div class="col-span-2 sm:col-span-1">
+  <label for="nomorwhatsapp" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Nomor Whatsapp</label>
+  <input type="number" name="nomorwhatsapp" id="nomorwhatsapp" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Contoh: 081288930761" required="">
+</div>
+<div class="col-span-2 sm:col-span-1">
+<label for="category" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Pilih Paket</label>
+<select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+    <option selected="">Select category</option>
+    <option value="A">Paket Kambing Betina A</option>
+    <option value="B">Paket Kambing Betina B</option>
+    <option value="C">Paket Kambing Betina C</option>
+    <option value="D">Paket Kambing Betina D</option>
+    <option value="Super">Paket Super</option>
+</select>
+</div>
+<div class="col-span-2">
+  <label for="alamat" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Alamat Pengiriman</label>
+  <input type="text" name="alamat" id="alamat" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Masukkan Alamat" required="">
+</div>
+<div class="col-span-2">
+  <label for="category" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Pilih Bank</label>
+  <select id="category" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
+      <option selected="">Select category</option>
+      <option value="BCA">BCA-1650368688-Muhamad Farhan</option>
+      <option value="BRI">BRI-771601013900530-Muhamad Farhan</option>
+      <option value="DANA">DANA-081288930761</option>
+  </select>
+</div>
+<div class="col-span-2 sm:col-span-1">
+<label for="file_input" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Bukti Pembayaran</label>
+<input id="file_input" type="file" name="file-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="" required="">
+</div>
+<div class="col-span-2 sm:col-span-1">
+<label for="event_date" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Tanggal Acara</label>
+<input id="event_date" type="date" name="event-date" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" required="">
+</div>
+<div class="col-span-2">
+  <label for="description" class="block mb-1 text-sm font-medium text-gray-900 dark:text-white">Deskripsi Request</label>
+  <textarea id="description" rows="3" class="block p-2 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-orange-500 focus:border-orange-500 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white dark:focus:ring-orange-500 dark:focus:border-orange-500" placeholder="Masukkan deskripsi request"></textarea>                    
+</div>
+</div>
+<button type="submit" class="text-white inline-flex items-center bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg -orange-600 dark:hover:bg-orange-700 dark:focus:ring-orange-800">
+<svg class="me-1 -ms-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+Kirim Pesanan
+</button>
+</form>
+</div>
+</div>
+</div> 
+
+
+        <div class="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
+          <div class="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 bg-gray-50">
+            <div class="space-y-2">
+              <h4 class="text-2xl font-bold">Note</h4>
+            </div>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-start space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6 text-orange-800">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Menggunakan domba betina 1 ekor</span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6 text-orange-800">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Harga/paket sudah free ongkir 10 km</span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6 text-orange-800">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Include sertifikat dan kartu ucapan</span>
+              </li>
+              <li class="flex items-start space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="flex-shrink-0 w-6 h-6 text-orange-800">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                </svg>
+                <span>Bebas pilih boks bento/biasa</span>
+              </li>
+            </ul>
+            <a rel="noopener noreferrer" href="../src/index.html#kontakkami" class="inline-block w-full px-5 py-3 font-semibold tracking-wider text-center rounded bg-orange-800 text-gray-50">Hubungi Kami</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
