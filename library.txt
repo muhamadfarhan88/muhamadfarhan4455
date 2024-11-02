@@ -8,9 +8,6 @@ https://mambaui.com
 
 https://flowbite.com
 
-https://michalsnik.github.io/aos/
-(TIDAK JADI PAKAI)
-
 https://seeklogo.com
 
 https://lordicon.com
@@ -21,4 +18,8 @@ undraw
     </script>
 (TIDAK TAU INI SCRIPT APA TIDAK DIPAKAI)
 
-scrollreveral
+scrollreveral (blom terpakai)
+
+https://michalsnik.github.io/aos/
+
+https://animate.style/
