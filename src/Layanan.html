@@ -14,171 +14,181 @@
     
     <!--alphine js-->
     <script src="//unpkg.com/alpinejs" defer></script>
+
+    <!--animasi style-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!--aos + animasi style-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- NAVIGATION-->
-    <nav class="py-9 px-4" x-data="{navopen : true}">
-        <div class="container mx-auto flex items-center justify-between">
-          <div class="order-1 md:order-2">
-            <img src="../public/asset/logonavbar (1) (1).svg" alt="TeguhAqiqah Logo" class="w-[125px] h-[105px] object-cover">
-          </div>
-          <div class="lg:hidden order-2 md:order-1">
-            <img @click="navopen = !navopen" src="../public/asset/toogle.svg" alt="Toggle Menu" class="filter invert-[39%] sepia-[85%] saturate-[1772%] hue-rotate-[353deg] brightness-[97%] contrast-[95%]">
-          </div>
-          <div class="order-2 hidden lg:block">
-            <ul class="flex gap-16">
-                <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="../src/index.html#landing-page">BERANDA</a></li>
-                <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="../src/index.html#tentangkami">TENTANG</a></li>
-                <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="../src/index.html#layanan">LAYANAN</a></li>
-                <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="../src/index.html#kontakkami">KONTAK</a></li>
-            </ul>
+    <nav id="landing-page" class="py-9 px-4" x-data="{navopen : true}">
+      <div class="container mx-auto flex items-center justify-between">
+        <div class="order-1 md:order-2">
+          <img src="../public/asset/logonavbar (1) (1).svg" alt="TeguhAqiqah Logo" class="w-[125px] h-[105px] object-cover">
         </div>
-          <div class="order-3 hidden md:block">
-            <a href="../src/masuk.html">
-            <button class="bg-white hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full text-sm" >Masuk</button></a>
-            <a href="../src/daftar.html">
-            <button class="bg-orange-800 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full text-sm">Daftar</button></a>
-          </div>
+        <div class="lg:hidden order-2 md:order-1">
+          <img @click="navopen = !navopen" src="../public/asset/toogle.svg" alt="Toggle Menu" class="filter invert-[39%] sepia-[85%] saturate-[1772%] hue-rotate-[353deg] brightness-[97%] contrast-[95%]">
         </div>
-        
-        <div x-show="navopen" x-data="{open : false}" class="fixed bottom-0 left-0 right-0 bg-white p-3 z-50 border lg:hidden"
-          x-transition:enter="transition ease-out duration-300"
-          x-transition:enter-start="opacity-0 scale-90"
-          x-transition:enter-end="opacity-100 scale-100"
-          x-transition:leave="transition ease-in duration-300"
-          x-transition:leave-start="opacity-100 scale-100"
-          x-transition:leave-end="opacity-0 scale-90">
-          <ul class="flex justify-between items-start h-full flex-wrap md:flex-nowrap">
-            <li class="flex flex-col items-center">
-              <button class="flex flex-col items-center no-underline gap-1">
+        <div class="order-2 hidden lg:block">
+          <ul class="flex gap-16">
+              <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="#landing-page">BERANDA</a></li>
+              <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="#tentangkami">TENTANG</a></li>
+              <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="#layanan">LAYANAN</a></li>
+              <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="#kontakkami">KONTAK</a></li>
+          </ul>
+      </div>
+        <div class="order-3 hidden md:block">
+          <a href="../src/masuk.html">
+          <button class="bg-white hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full text-sm" >Masuk</button></a>
+          <a href="../src/daftar.html">
+          <button class="bg-orange-800 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full text-sm">Daftar</button></a>
+        </div>
+      </div>
+      
+      <div x-show="navopen" x-data="{open : false}" class="fixed bottom-0 left-0 right-0 bg-white p-3 z-50 border lg:hidden"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 scale-90"
+        x-transition:enter-end="opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100 scale-100"
+        x-transition:leave-end="opacity-0 scale-90">
+        <ul class="flex justify-between items-start h-full flex-wrap md:flex-nowrap">
+          <li class="flex flex-col items-center">
+            <button class="flex flex-col items-center no-underline gap-1">
 <lord-icon
-    src="https://cdn.lordicon.com/cnpvyndp.json"
-    trigger="hover"
-    class="text-1xl mb-0" 
-    colors="primary:#964B00" loading="lazy">
+  src="https://cdn.lordicon.com/cnpvyndp.json"
+  trigger="hover"
+  class="text-1xl mb-0" 
+  state="hover-1"
+  colors="primary:#964B00" loading="lazy">
 </lord-icon> 
-                <span class="text-grey text-xs font-normal"><a href="../src/index.html#landing-page">BERANDA</a></span>
-              </button>
-            </li>
-            <li class="flex flex-col items-center">
-              <button class="flex flex-col items-center no-underline gap-1">
-                <lord-icon
-                    src="https://cdn.lordicon.com/lyrrgrsl.json"
-                    trigger="hover"
-                    class="text-1xl mb-0" 
-                    colors="primary:#964B00" loading="lazy">
-                </lord-icon>
-                <span class="text-grey text-xs font-normal"><a href="../src/index.html#tentangkami">TENTANG KAMI</a></span>
-              </button>
-            </li>
-            <li class="flex flex-col items-center">
-              <button class="flex flex-col items-center no-underline gap-1">
-<lord-icon
-    src="https://cdn.lordicon.com/ktsahwvc.json"
-    trigger="hover"
-    class="text-1xl mb-0" 
-    colors="primary:#964B00" loading="lazy">
-</lord-icon>
-                <span class="text-grey text-xs font-normal"><a href="../src/index.html#layanan">LAYANAN</a></span>
-              </button>
-            </li>
-            <li class="flex flex-col items-center">
-              <button class="flex flex-col items-center  no-underline gap-1">
-<lord-icon
-    src="https://cdn.lordicon.com/kddybgok.json"
-    trigger="hover"
-    class="text-1xl mb-0" 
-    colors="primary:#964B00" loading="lazy">
-</lord-icon>
-                <span class="text-grey text-xs font-normal"><a href="../src/index.html#kontakkami">KONTAK</a></span>
-</button>
-                </li>
-                <li class="flex flex-col items-center">
-                    <button @click="open = !open" class="flex flex-col items-center  no-underline gap-1">
-<lord-icon
-    src="https://cdn.lordicon.com/lqxfrxad.json"
-    trigger="hover"
-    class="text-1xl mb-0"
-    colors="primary:#964B00" loading="lazy">
-</lord-icon>
-                        <span class="text-grey text-xs font-normal">PESAN</span>
-</button>
-                </li>
-            </ul>
-            <div x-show="open" 
-    class="absolute bottom-24 left-1/2 -translate-x-1/2 flex justify-center items-center gap-4 w-3/4"
-    x-transition:enter="transition ease-out duration-300"
-    x-transition:enter-start="opacity-0 scale-90"
-    x-transition:enter-end="opacity-100 scale-100"
-    x-transition:leave="transition ease-in duration-300"
-    x-transition:leave-start="opacity-100 scale-100"
-    x-transition:leave-end="opacity-0 scale-90">
-    <div class="flex justify-center gap-4 w-full max-w-md">
-        <a href="../src/masuk.html" class="w-full">
-            <button class="w-full bg-white hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full text-sm transition-colors duration-300">
-                Masuk
+              <span class="text-grey text-xs font-normal"><a href="#landing-page">BERANDA</a></span>
             </button>
-        </a>
-        <a href="../src/daftar.html" class="w-full">
-            <button class="w-full bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full text-sm transition-colors duration-300">
-                Daftar
+          </li>
+          <li class="flex flex-col items-center">
+            <button class="flex flex-col items-center no-underline gap-1">
+              <lord-icon
+                  src="https://cdn.lordicon.com/lyrrgrsl.json"
+                  trigger="hover"
+                  class="text-1xl mb-0" 
+                  colors="primary:#964B00" loading="lazy">
+              </lord-icon>
+              <span class="text-grey text-xs font-normal"><a href="#tentangkami">TENTANG KAMI</a></span>
             </button>
-        </a>
-    </div>
+          </li>
+          <li class="flex flex-col items-center">
+            <button class="flex flex-col items-center no-underline gap-1">
+<lord-icon
+  src="https://cdn.lordicon.com/ktsahwvc.json"
+  trigger="hover"
+  class="text-1xl mb-0" 
+  colors="primary:#964B00" loading="lazy">
+</lord-icon>
+              <span class="text-grey text-xs font-normal"><a href="#layanan">LAYANAN</a></span>
+            </button>
+          </li>
+          <li class="flex flex-col items-center">
+            <button class="flex flex-col items-center  no-underline gap-1">
+<lord-icon
+  src="https://cdn.lordicon.com/kddybgok.json"
+  trigger="hover"
+  class="text-1xl mb-0" 
+  colors="primary:#964B00" loading="lazy">
+</lord-icon>
+              <span class="text-grey text-xs font-normal"><a href="#kontakkami">KONTAK</a></span>
+</button>
+              </li>
+              <li class="flex flex-col items-center">
+                  <button @click="open = !open" class="flex flex-col items-center  no-underline gap-1">
+<lord-icon
+  src="https://cdn.lordicon.com/lqxfrxad.json"
+  trigger="hover"
+  class="text-1xl mb-0"
+  colors="primary:#964B00" loading="lazy">
+</lord-icon>
+                      <span class="text-grey text-xs font-normal">PESAN</span>
+</button>
+              </li>
+          </ul>
+          <div x-show="open" 
+  class="absolute bottom-24 left-1/2 -translate-x-1/2 flex justify-center items-center gap-4 w-3/4"
+  x-transition:enter="transition ease-out duration-300"
+  x-transition:enter-start="opacity-0 scale-90"
+  x-transition:enter-end="opacity-100 scale-100"
+  x-transition:leave="transition ease-in duration-300"
+  x-transition:leave-start="opacity-100 scale-100"
+  x-transition:leave-end="opacity-0 scale-90">
+  <div class="flex justify-center gap-4 w-full max-w-md">
+      <a href="../src/masuk.html" class="w-full">
+          <button class="w-full bg-white hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full text-sm transition-colors duration-300">
+              Masuk
+          </button>
+      </a>
+      <a href="../src/daftar.html" class="w-full">
+          <button class="w-full bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full text-sm transition-colors duration-300">
+              Daftar
+          </button>
+      </a>
+  </div>
 </div>
-        </div>
-    </nav>
+      </div>
+      </nav>
 
     <!--Hero section-->
     <section>
-<div class="container mx-auto px-4 py-4 lg:py-16">
-  <div class="grid grid-cols-12 items-center">
-      <div class="col-span-12 lg:col-span-4 order-2 lg:order-1 p-2">
-        <div>
-          <a href="../src/index.html#layanan" class="px-8 py-4 text-orange-800 flex items-center justify-center lg:justify-start text-sm font-bold drop-shadow-sm-shadow rounded-full mx-auto w-full sm:w-auto md:w-auto lg:w-auto lg:mx-0">
-            <span class="text-center lg:text-left lg:w-auto">
-              Jelajahi Layanan Aqiqah</span>
-            </span>
-            <img src="../public/asset/Vector.svg" alt="" loading="lazy" class="ml-2 sm:ml-3 md:ml-4 lg:ml-2">
-          </a>
-<h1 class="mt-4 mb-6 md:mb-[43px] md:mt-[43px] lg:text-[30px] font-bold text-[25px] md-text-[27px] text-grey leading-tight text-center lg:text-start">Aqiqah, <span class="text-orange-800">Catering dan Qurban?</span> Kami Ahlinya!</h1>
-<p class="mb-8 md:mb-[43px] text-center lg:text-start text-grey opacity-50 text-base md:text-[13px] font-inter md:w-3/4 lg:w-full mx-auto">
-  Nikmati layanan aqiqah, catering, dan qurban berkualitas tinggi yang aman, terjangkau, dan bikin acara keagamaan Anda sukses tanpa ribet dengan pengalaman yang menyenangkan.
-</p>
-<div class="flex flex-col md:flex-row justify-center gap-6 lg:justify-start">
-  <a href="masuk.html" class="py-8 px-6 text-center bg-orange-800 hover:bg-orange-600 drop-shadow-lg-shadow text-white rounded-full text-sm font-bold">Pesan Sekarang</a>
-  <a href="../src/index.html#tentangkami" class="justify-center items-center z-index flex gap-2 py-6 px-8 bg-white border border-[#EEEEEE] rounded-full text-sm font-bold">
-<lord-icon
-    src="https://cdn.lordicon.com/aklfruoc.json"
-    trigger="hover" colors="primary:#e04a0e" loading="lazy">
-</lord-icon>
-    Tentang Kami
-  </a>
-</div>
+      <div class="container mx-auto px-4 py-4 lg:py-16">
+        <div class="grid grid-cols-12 items-center">
+            <div class="col-span-12 lg:col-span-4 order-2 lg:order-1 p-2">
+              <div>
+                <a href="#layanan" class="px-8 py-4 text-orange-800 flex items-center justify-center lg:justify-start text-sm font-bold drop-shadow-sm-shadow rounded-full mx-auto w-full sm:w-auto md:w-auto lg:w-auto lg:mx-0">
+                  <span class="text-center lg:text-left lg:w-auto animate__animated animate__fadeInUp">
+                    Jelajahi Layanan Aqiqah</span>
+                  </span>
+                  <img src="../public/asset/Vector.svg" alt="" loading="lazy" class="ml-2 sm:ml-3 md:ml-4 lg:ml-2">
+                </a>
+      <h1 class="mt-4 mb-6 md:mb-[43px] md:mt-[43px] lg:text-[30px] font-bold text-[25px] md-text-[27px] text-grey leading-tight text-center lg:text-start animate__animated animate__fadeInUp">Aqiqah, <span class="text-orange-800">Catering dan Qurban?</span> Kami Ahlinya!</h1>
+      <p class="mb-8 md:mb-[43px] text-center lg:text-start text-grey opacity-50 text-base md:text-[13px] font-inter md:w-3/4 lg:w-full mx-auto animate__animated animate__fadeInUp">
+        Nikmati layanan aqiqah, catering, dan qurban berkualitas tinggi yang aman, terjangkau, dan bikin acara keagamaan Anda sukses tanpa ribet dengan pengalaman yang menyenangkan.
+      </p>
+      <div class="flex flex-col md:flex-row justify-center gap-6 lg:justify-start animate__animated animate__fadeInUp">
+        <a href="masuk.html" class="py-8 px-6 text-center bg-orange-800 hover:bg-orange-600 drop-shadow-lg-shadow text-white rounded-full text-sm font-bold">Pesan Sekarang</a>
+        <a href="#tentangkami" class="justify-center items-center z-index flex gap-2 py-6 px-8 bg-white border border-[#EEEEEE] rounded-full text-sm font-bold">
+      <lord-icon
+          src="https://cdn.lordicon.com/aklfruoc.json"
+          trigger="hover" colors="primary:#e04a0e" loading="lazy">
+      </lord-icon>
+          Tentang Kami
+        </a>
+      </div>
+              </div>
+            </div>
+            <div class="col-span-12 lg:col-span-8 order-1 lg:order-2 text-center animate__animated animate__rotateIn">
+              <img src="../public/asset/hero1.webp" class="w-full" loading="lazy" alt="">
+            </div>
+        </div>
+        <div class="col-span-12 order-3 py-8">
+          <div class="flex justify-center lg:justify-between gap-7 sm:gap-14 items-center overflow-hidden">
+            <div>
+              <img src="../public/asset/rumah-zakat-seeklogo (1).svg" width="80" height="60" alt="" loading="lazy" alt="">
+            </div>
+            <div>
+              <img src="../public/asset/lalamove-seeklogo (2).svg" width="80" height="60" alt="" loading="lazy">
+            </div><div>
+              <img src="../public/asset/Gojek_logo_2019 (1).svg" width="80" height="60" alt="" loading="lazy" alt="">
+            </div><div>
+              <img src="../public/asset/655c00d5da1ff-spx-express (1).svg" width="80" height="60" alt="" loading="lazy" alt="">
+            </div><div>
+              <img src="../public/asset/Logo DANA (1).svg" width="80" height="60" alt="" loading="lazy" alt="">
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-span-12 lg:col-span-8 order-1 lg:order-2 text-center">
-        <img src="../public/asset/hero1.webp" class="w-full" loading="lazy" alt="">
-      </div>
-  </div>
-  <div class="col-span-12 order-3 py-8">
-    <div class="flex justify-center lg:justify-between gap-7 sm:gap-14 items-center overflow-hidden">
-      <div>
-        <img src="../public/asset/rumah-zakat-seeklogo (1).svg" width="80" height="60" alt="" loading="lazy" alt="">
-      </div>
-      <div>
-        <img src="../public/asset/lalamove-seeklogo (2).svg" width="80" height="60" alt="" loading="lazy">
-      </div><div>
-        <img src="../public/asset/Gojek_logo_2019 (1).svg" width="80" height="60" alt="" loading="lazy" alt="">
-      </div><div>
-        <img src="../public/asset/655c00d5da1ff-spx-express (1).svg" width="80" height="60" alt="" loading="lazy" alt="">
-      </div><div>
-        <img src="../public/asset/Logo DANA (1).svg" width="80" height="60" alt="" loading="lazy" alt="">
-      </div>
-    </div>
-  </div>
-</div>
-    </section>
+              </section>
 
 <!--Paket Aqiqah Hemat Laki-Laki-->
   <section class=" card1 py-20 bg-gray-100 text-gray-800">
@@ -803,5 +813,10 @@
         <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <!--livechatJS-->
         <script type="livechat" src="../src/livechat.js"></script>
+    <!--Aos style-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
