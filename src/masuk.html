@@ -24,19 +24,29 @@
           Welcome To Teguh Aqiqah
         </h2>
         <div class="relative mb-4 sm:mb-6">
-          <i class="fa fa-user absolute text-orange-600 text-base sm:text-lg md:text-xl top-2 sm:top-3 left-3"></i>
-          <input type="text" placeholder="Username" class="w-full pl-8 sm:pl-10 pr-3 py-1 sm:py-2 border-b-2 font-inter focus:outline-none focus:border-orange-600 transition-all duration-300 text-sm sm:text-base md:text-lg" />
+          <i for="loginuseradmin" class="fa fa-user absolute text-orange-600 text-base sm:text-lg md:text-xl top-2 sm:top-3 left-3"></i>
+          <input id="loginuseradmin" type="text" placeholder="Username" class="w-full pl-8 sm:pl-10 pr-3 py-1 sm:py-2 border-b-2 font-inter focus:outline-none focus:border-orange-600 transition-all duration-300 text-sm sm:text-base md:text-lg" />
         </div>
         <div class="relative mb-4 sm:mb-6">
-          <i class="fa fa-lock absolute text-orange-600 text-base sm:text-lg md:text-xl top-2 sm:top-3 left-3"></i>
-          <input type="password" placeholder="Password" class="w-full pl-8 sm:pl-10 pr-3 py-1 sm:py-2 border-b-2 font-inter focus:outline-none focus:border-orange-600 transition-all duration-300 text-sm sm:text-base md:text-lg" />
+          <i for="passwordL" class="fa fa-lock absolute text-orange-600 text-base sm:text-lg md:text-xl top-2 sm:top-3 left-3"></i>
+          <input id="passwordL" type="password" placeholder="Password" class="w-full pl-8 sm:pl-10 pr-3 py-1 sm:py-2 border-b-2 font-inter focus:outline-none focus:border-orange-600 transition-all duration-300 text-sm sm:text-base md:text-lg" />
           <i class="fa fa-eye absolute text-orange-600 text-base sm:text-lg md:text-xl top-2 sm:top-3 right-2 cursor-pointer"></i>
         </div>
-        <div class="flex justify-center mb-4 sm:mb-6">
+        
+        <!-- Role Selection and Forgot Password Row -->
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-4 sm:mb-6">
+          <div class="flex items-center gap-2">
+            <label for="role" class="text-xs sm:text-sm md:text-base text-gray-600 font-bold">Role:</label>
+            <select id="role" class="text-xs sm:text-sm md:text-base text-gray-600 border-b-2 border-gray-300 focus:border-orange-600 focus:outline-none transition-all duration-300 py-1 px-2">
+              <option value="user">User</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
           <a href="forgot-password.html" class="text-xs sm:text-sm md:text-base text-gray-600 hover:text-orange-600 font-bold transition-colors duration-300">
             Forgot password?
           </a>
         </div>
+
         <div class="flex flex-col gap-2 sm:gap-4">
           <button type="submit" class="w-full py-2 px-4 bg-orange-600 rounded-full text-white font-bold uppercase text-center text-xs sm:text-sm md:text-base transition-all duration-300 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50">
             Login
