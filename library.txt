@@ -30,3 +30,5 @@ https://www.preline.co/templates.html (free template)
 https://www.ripple-ui.com/docs/components/button
 
 https://tailgrids.com/
+
+https://www.creative-tim.com/learning-lab/tailwind/html/quick-start/soft-ui-dashboard/
