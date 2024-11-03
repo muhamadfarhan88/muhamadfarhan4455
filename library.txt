@@ -18,8 +18,9 @@ undraw
     </script>
 (TIDAK TAU INI SCRIPT APA TIDAK DIPAKAI)
 
+
 scrollreveral (blom terpakai)
 
-https://michalsnik.github.io/aos/
+https://michalsnik.github.io/aos/ (tidak dipakai)
 
-https://animate.style/ (cari animasi disini)
+https://animate.style/ (tidak dipakai)
