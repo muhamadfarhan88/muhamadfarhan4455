@@ -23,118 +23,81 @@
 </head>
 <body class="pb-20 font-['Inter']">
         <!-- NAVIGATION-->
-        <nav id="landing-page" class="py-9 px-4" x-data="{navopen : true}">
-        <div class="container mx-auto flex items-center justify-between">
-          <div class="order-1 md:order-2">
-            <img src="../public/asset/logonavbar(1).svg" alt="TeguhAqiqah Logo" class="w-[125px] h-[105px] object-cover">
-          </div>
-          <div class="lg:hidden order-2 md:order-1">
-            <img @click="navopen = !navopen" src="../public/asset/toogle.svg" alt="Toggle Menu" class="filter invert-[39%] sepia-[85%] saturate-[1772%] hue-rotate-[353deg] brightness-[97%] contrast-[95%]">
-          </div>
-          <div class="order-2 hidden lg:block">
-            <ul class="flex gap-16">
-                <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="#landing-page">BERANDA</a></li>
-                <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="#tentangkami">TENTANG</a></li>
-                <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="#layanan">LAYANAN</a></li>
-                <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="#kontakkami">KONTAK</a></li>
-            </ul>
-        </div>
-          <div class="order-3 hidden md:block">
-            <a href="../src/masuk.html">
-            <button class="bg-white hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full text-sm" >Masuk</button></a>
-            <a href="../src/daftar.html">
-            <button class="bg-orange-800 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full text-sm">Daftar</button></a>
-          </div>
-        </div>
-        
-        <div x-show="navopen" x-data="{open : false}" class="fixed bottom-0 left-0 right-0 bg-white p-3 z-50 border lg:hidden"
-          x-transition:enter="transition ease-out duration-300"
-          x-transition:enter-start="opacity-0 scale-90"
-          x-transition:enter-end="opacity-100 scale-100"
-          x-transition:leave="transition ease-in duration-300"
-          x-transition:leave-start="opacity-100 scale-100"
-          x-transition:leave-end="opacity-0 scale-90">
-          <ul class="flex justify-between items-start h-full flex-wrap md:flex-nowrap">
-            <li class="flex flex-col items-center">
+<nav id="landing-page" class="py-9 px-4">
+  <div class="container mx-auto flex items-center justify-between">
+      <div class="order-1 md:order-2">
+          <img src="../public/asset/logonavbar(1).svg" alt="TeguhAqiqah Logo" class="w-[125px] h-[105px] object-cover">
+      </div>
+      <div class="lg:hidden order-2 md:order-1">
+          <img id="toggle-button" src="../public/asset/toogle.svg" alt="Toggle Menu" class="filter invert-[39%] sepia-[85%] saturate-[1772%] hue-rotate-[353deg] brightness-[97%] contrast-[95%] cursor-pointer">
+      </div>
+      <div class="order-2 hidden lg:block">
+          <ul class="flex gap-16">
+              <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="#landing-page">BERANDA</a></li>
+              <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="#tentangkami">TENTANG</a></li>
+              <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="#layanan">LAYANAN</a></li>
+              <li class="text-grey font-bold text-sm font-circular hover:text-orange-800"><a href="#kontakkami">KONTAK</a></li>
+          </ul>
+      </div>
+      <div class="order-3 hidden md:block">
+          <a href="../src/masuk.html">
+              <button class="bg-white hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full text-sm">Masuk</button>
+          </a>
+          <a href="../src/daftar.html">
+              <button class="bg-orange-800 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full text-sm">Daftar</button>
+          </a>
+      </div>
+  </div>
+
+  <div id="nav-menu-mobile" class="fixed bottom-0 left-0 right-0 bg-white p-3 z-50 border lg:hidden hidden">
+      <ul class="flex justify-between items-start h-full flex-wrap md:flex-nowrap">
+          <li class="flex flex-col items-center">
               <button class="flex flex-col items-center no-underline gap-1">
-<lord-icon
-    src="https://cdn.lordicon.com/cnpvyndp.json"
-    trigger="hover"
-    class="text-1xl mb-0" 
-    state="hover-1"
-    colors="primary:#964B00" loading="lazy">
-</lord-icon> 
-                <span class="text-grey text-xs font-normal"><a href="#landing-page">BERANDA</a></span>
+                  <lord-icon src="https://cdn.lordicon.com/cnpvyndp.json" trigger="hover" class="text-1xl mb-0" state="hover-1" colors="primary:#964B00" loading="lazy"></lord-icon>
+                  <span class="text-grey text-xs font-normal"><a href="#landing-page">BERANDA</a></span>
               </button>
-            </li>
-            <li class="flex flex-col items-center">
+          </li>
+          <li class="flex flex-col items-center">
               <button class="flex flex-col items-center no-underline gap-1">
-                <lord-icon
-                    src="https://cdn.lordicon.com/lyrrgrsl.json"
-                    trigger="hover"
-                    class="text-1xl mb-0" 
-                    colors="primary:#964B00" loading="lazy">
-                </lord-icon>
-                <span class="text-grey text-xs font-normal"><a href="#tentangkami">TENTANG KAMI</a></span>
+                  <lord-icon src="https://cdn.lordicon.com/lyrrgrsl.json" trigger="hover" class="text-1xl mb-0" colors="primary:#964B00" loading="lazy"></lord-icon>
+                  <span class="text-grey text-xs font-normal"><a href="#tentangkami">TENTANG KAMI</a></span>
               </button>
-            </li>
-            <li class="flex flex-col items-center">
+          </li>
+          <li class="flex flex-col items-center">
               <button class="flex flex-col items-center no-underline gap-1">
-<lord-icon
-    src="https://cdn.lordicon.com/ktsahwvc.json"
-    trigger="hover"
-    class="text-1xl mb-0" 
-    colors="primary:#964B00" loading="lazy">
-</lord-icon>
-                <span class="text-grey text-xs font-normal"><a href="#layanan">LAYANAN</a></span>
+                  <lord-icon src="https://cdn.lordicon.com/ktsahwvc.json" trigger="hover" class="text-1xl mb-0" colors="primary:#964B00" loading="lazy"></lord-icon>
+                  <span class="text-grey text-xs font-normal"><a href="#layanan">LAYANAN</a></span>
               </button>
-            </li>
-            <li class="flex flex-col items-center">
-              <button class="flex flex-col items-center  no-underline gap-1">
-<lord-icon
-    src="https://cdn.lordicon.com/kddybgok.json"
-    trigger="hover"
-    class="text-1xl mb-0" 
-    colors="primary:#964B00" loading="lazy">
-</lord-icon>
-                <span class="text-grey text-xs font-normal"><a href="#kontakkami">KONTAK</a></span>
-</button>
-                </li>
-                <li class="flex flex-col items-center">
-                    <button @click="open = !open" class="flex flex-col items-center  no-underline gap-1">
-<lord-icon
-    src="https://cdn.lordicon.com/lqxfrxad.json"
-    trigger="hover"
-    class="text-1xl mb-0"
-    colors="primary:#964B00" loading="lazy">
-</lord-icon>
-                        <span class="text-grey text-xs font-normal">PESAN</span>
-</button>
-                </li>
-            </ul>
-            <div x-show="open" 
-    class="absolute bottom-24 left-1/2 -translate-x-1/2 flex justify-center items-center gap-4 w-3/4"
-    x-transition:enter="transition ease-out duration-300"
-    x-transition:enter-start="opacity-0 scale-90"
-    x-transition:enter-end="opacity-100 scale-100"
-    x-transition:leave="transition ease-in duration-300"
-    x-transition:leave-start="opacity-100 scale-100"
-    x-transition:leave-end="opacity-0 scale-90">
-    <div class="flex justify-center gap-4 w-full max-w-md">
-        <a href="../src/masuk.html" class="w-full">
-            <button class="w-full bg-white hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full text-sm transition-colors duration-300">
-                Masuk
-            </button>
-        </a>
-        <a href="../src/daftar.html" class="w-full">
-            <button class="w-full bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full text-sm transition-colors duration-300">
-                Daftar
-            </button>
-        </a>
-    </div>
-</div>
-        </div>
-        </nav>
+          </li>
+          <li class="flex flex-col items-center">
+              <button class="flex flex-col items-center no-underline gap-1">
+                  <lord-icon src="https://cdn.lordicon.com/kddybgok.json" trigger="hover" class="text-1xl mb-0" colors="primary:#964B00" loading="lazy"></lord-icon >
+                  <span class="text-grey text-xs font-normal"><a href="#kontakkami">KONTAK</a></span>
+              </button>
+          </li>
+          <li class="flex flex-col items-center">
+              <button id="pesan-button" class="flex flex-col items-center no-underline gap-1">
+                  <lord-icon src="https://cdn.lordicon.com/lqxfrxad.json" trigger="hover" class="text-1xl mb-0" colors="primary:#964B00" loading="lazy"></lord-icon>
+                  <span class="text-grey text-xs font-normal">PESAN</span>
+              </button>
+          </li>
+      </ul>
+      <div id="nav-menu-mobile-actions" class="absolute bottom-24 left-1/2 -translate-x-1/2 flex justify-center items-center gap-4 w-3/4">
+          <div class="flex justify-center gap-4 w-full max-w-md">
+              <a href="../src/masuk.html" class="w-full">
+                  <button class="w-full bg-white hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full text-sm transition-colors duration-300">
+                      Masuk
+                  </button>
+              </a>
+              <a href="../src/daftar.html" class="w-full">
+                  <button class="w-full bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full text-sm transition-colors duration-300">
+                      Daftar
+                  </button>
+              </a>
+          </div>
+      </div>
+  </div>
+</nav>
 
         <!--Hero section-->
         <section>
@@ -477,8 +440,8 @@
             <div class="mt-16 lg:mt-24 rounded-lg overflow-hidden shadow-lg">
               <div class="flex flex-col lg:flex-row">
                 <!-- Image container -->
-                <div class="w-full lg:w-1/2 relative">
-                  <div class="aspect-w-4 aspect-h-3 sm:aspect-w-16 sm:aspect-h-9 lg:aspect-w-3 lg:aspect-h-4 flex justify-center items-center">
+                <div class="w-full lg:w-1/2 relative ">
+                  <div class="aspect-w-4 aspect-h-3 sm:aspect-w-16 sm:aspect-h-9 lg:aspect-w-3 lg:aspect-h-4 flex justify-center items-center ">
                     <img 
                       src="../public/asset/orang3.svg" 
                       alt="Team Member 3" 
@@ -886,6 +849,7 @@
 
 <!--index partial js-->
 <script src="../src/JS/index.js"> </script>
+<script src="../src/JS/navbar.js" defer></script>
     
 </body>
 </html>
