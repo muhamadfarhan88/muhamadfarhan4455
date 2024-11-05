@@ -11,10 +11,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
 </head>
-<body>
 
-    <!--Nav admin-->
-  <nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200">
+<body class="pt-20">
+<!--Nav admin-->
+<nav class="fixed top-0 z-50 w-full bg-white border-b border-gray-200">
     <div class="px-3 py-3 lg:px-5 lg:pl-3">
       <div class="flex items-center justify-between">
         <div class="flex items-center justify-start rtl:justify-end">
@@ -42,7 +42,7 @@
               </div>
               <ul class="py-1" role="none">
                 <li>
-                  <a href="Aprofile.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Settings</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Settings</a>
                 </li>
                 <li>
                   <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
@@ -107,43 +107,27 @@
   </aside>
 
   <div class="p-4 sm:ml-64">
-    <div class="p-4 border-gray-200 rounded-lg mt-14">
-      <div class="grid grid-cols-1 gap-4 mb-4">
-        <div class="flex items-center justify-center h-24 rounded bg-gray-50">
-          <p class="text-2xl text-gray-400">Welcome to Dashboard</p>
-        </div>
-      </div>
-      <div class="grid grid-cols-3 gap-4 mb-4">
-        <div class="flex items-center justify-center h-24 rounded bg-gray-50">
-          <p class="text-2xl text-gray-400">
-            <i class="mb-2 fas fa-users"></i><br>
-            1,257 Users
-          </p>
-        </div>
-        <div class="flex items-center justify-center h-24 rounded bg-gray-50">
-          <p class="text-2xl text-gray-400">
-            <i class="mb-2 fas fa-shopping-cart"></i><br>
-            342 Products
-          </p>
-        </div>
-        <div class="flex items-center justify-center h-24 rounded bg-gray-50">
-          <p class="text-2xl text-gray-400">
-            <i class="mb-2 fas fa-chart-bar"></i><br>
-            $45,257 Sales
-          </p>
-        </div>
-      </div>
-      <div class="grid grid-cols-2 gap-4">
-        <div class="flex items-center justify-center rounded h-96 bg-gray-50">
-          <p class="text-2xl text-gray-400">Chart Area</p>
-        </div>
-        <div class="flex items-center justify-center rounded h-96 bg-gray-50">
-          <p class="text-2xl text-gray-400">Chart Area</p>
-        </div>
-      </div>
+    <div class="p-4 mt-20 border-2 border-gray-200 rounded-lg">
+        <h2 class="mb-6 text-2xl font-bold">Pengaturan Profil</h2>
+        <form id="updateProfileForm" enctype="multipart/form-data" class="space-y-6">
+            <div class="flex flex-col items-center">
+                <img id="avatarPreview" class="w-24 h-24 mb-4 rounded-full" src="/public/asset/imgadmin/ferr-studio-G2Qjx1y9aAM-unsplash.jpg" alt="User avatar">
+                <label for="avatar" class="px-4 py-2 text-sm text-white bg-blue-600 rounded-md cursor-pointer hover:bg-blue-700">
+                    Ubah Avatar
+                    <input type="file" id="avatar" name="avatar" accept="image/*" class="hidden" onchange="previewAvatar(event)">
+                </label>
+            </div>
+            <div class="max-w-md mx-auto">
+                <label for="username" class="block mb-2 text-sm font-medium text-gray-700">Username</label>
+                <input type="text" id="username" name="username" class="block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring focus:ring-blue-500 focus:border-blue-500" placeholder="Masukkan username baru" required>
+            </div>
+            <div class="max-w-md mx-auto">
+                <button type="submit" class="w-full px-4 py-2 text-white transition duration-300 bg-blue-600 rounded-md hover:bg-blue-700">Simpan Perubahan</button>
+            </div>
+        </form>
     </div>
-  </div>
-  
-  
+</div>
+
 </body>
+
 </html>
